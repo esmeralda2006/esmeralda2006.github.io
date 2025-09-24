@@ -1,0 +1,202 @@
+/* Cuerpo */
+body {
+    font-family: Arial, sans-serif;/*tipo de letra*/
+    margin: 0;/*elimina margenes predeterminado*/
+    padding: 0;/*elimina relleno predeterminado*/
+    line-height:2;/*interlineado*/
+    height: 100%;/*asegurar que el cuerpo ocupe toda la altura disponible*/
+}
+
+/* Cabecera */
+header {
+    color:white;/*color letra*/
+    text-align: center;/*alineado al centro*/
+    padding: 0;;/*elimina relleno predeterminado en la cabecera*/
+    margin: 0;/*elimina margenes predeterminado en la cabecera*/
+}
+
+/* Título en la cabecera */
+header h1 {
+    margin: 0;/*Elimina margenes en el h1 */
+    font-size: 2em;/*Tamaño fuente del h1*/
+    text-align: center;/*centrar texto*/
+    margin-bottom: 20px 0;/*añade espacio arriba y abajo del h1*/
+    background-color:black;/*color fondo*/
+}
+
+/* Estilos para el menú de navegación */
+nav ul{
+    padding: 0;/*elimina relleno interno del menu*/
+    margin: 0;/*elimina margenes del menu*/
+    display: flex;/*menu en fila */
+    background-color:lightslategray;/*fondo*/
+    justify-content: center;/*centra elementos del menu*/
+}
+
+/* Estilos para los elementos de la lista de menu de navegacion */
+nav ul li {
+    list-style-type: none;/*elimina puntos*/
+    margin: 0 80px; /* Espaciado entre los elementos del menu */
+}
+
+/* Estilos para los enlaces menu de navegacion */
+nav ul li a {
+    text-decoration: none;/*elimina puntos*/
+    color:black;/*color enlaces*/
+    padding: 10px 20px;/*espaciado enlaces del menu*/
+    font-weight: bold;/*negrita*/
+}
+/*transicion pasar encima del boton de menu*/
+nav ul li:hover{
+    background-color:lightsteelblue;/*cambia color de fondo del menu */
+   }
+/*menu pantallas pequeñas*/
+@media (max-width: 768px) {
+   nav ul{
+flex-direction: column;/*cambia diseño menu a una columna */
+    }
+    nav ul li{
+        margin-bottom: 10px;/*espaciado elementos entre columna*/
+    }
+}
+/*estilo principales del contenido*/
+main {
+    display: block;/* se muestre como bloque*/
+    overflow: hidden;/*no se desborde contenido del main*/
+    margin: 0 auto;/*centra contenido horizontalmente*/
+    padding:20px; /* Añade espacio dentro */
+    margin-left: 30px; /* Añade espacio ala izquierda del contenido */
+}
+
+section img {
+    width:75%;/*ocupa el 75% contenedor*/
+    height: auto;/*mantiene proporcion de la imagen*/
+    margin-top: 10px;/*espacio arriba*/
+    border-radius: 8px;/*esquina redondas de la imagen*/
+}
+/*estilo principales del contenedor y elementos principales*/
+.contenedor{
+    display: flex;/*elementos en fila*/
+    flex-wrap: wrap;/*elemntos se ajusten en lineas nuevas si es necesario*/
+    justify-content: space-between;/*espacia los elementos*/
+    margin: 20px;/*añade espacio externo alrededor del contenedor*/
+}
+/*estilo cada contenedor de item*/
+.contenedor_item{
+    display: flex;/*elementos ala par como las imagen y su informacion en pagina de gastronomia*/
+    flex-direction: row;/*ordena los elementos  fila*/
+    width: 48%;/*cada elemento ocupa el 48% del contenedor*/
+    margin-bottom: 20px;/*espacio abajo*/
+    align-items: center;/*alinea elemntos verticalmente*/
+}
+.contenedor_item img{
+    width: 50%;/*la img ocupa el 50% del ancho del elemento*/
+    margin-right: 20px;/*espacio ala derecha de la imagen*/
+}
+.contenedor_item h2{
+    font: size 1.5em;
+    margin: 10px 0;
+}
+/* Estilos para pantallas pequeñas (una columna) */
+@media(max-width:768px){
+.contenedor_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+}
+/*aside*/
+aside{
+    width: 50%;/*ancho aside*/
+}
+/*estilos de aside*/
+aside h2{
+    font-size: 1.2rem;  /*tamaño fuente encabezado del aside*/
+  }
+  aside p{
+      font-size: 1rem;/*tamaño fuente parrafo del aside*/
+      line-height: 1.6;/*espaciado*/
+  }
+  /*estilo pide pagina*/
+  footer {
+    text-align: center; /*centrado*/
+    background-color: #2c3e50; /*fondo*/
+    color: white; /*color texto*/
+    width: 100%; /*ocupa todo el ancho*/
+    padding: 10px; /*espaciado dentro*/
+    position: relative; /*posicionamiento*/
+}
+footer p {
+    margin: 0;/*elimina margenes*/
+}
+/*Estilo lista ordenada*/
+.lista_ordenada h3{
+    font-size: 1.5rem;/*tamaño letra*/
+    color: #333;/*color letra*/
+    margin-bottom: 20px;/*Espaciado abajo*/
+}
+.lista_ordenada ol{
+    list-style-type: decimal;/*estilo de numeracion*/
+    margin: 0;/*elimina margenes*/
+    padding: 0;/*elimina relleno*/
+    text-align: left;/*alineado texto izquierda*/
+   padding-left: 20px;/*espaciado a la izquierda del contenido*/
+   line-height: 1.6;/*interlineado*/
+}
+.lista_ordenada li{
+ margin-bottom: 15px;/*espaciado abajo*/
+ line-height: 1.6;/*interlineado*/
+ }
+ .lista_ordenada a{
+  color:black;/*color texto*/
+  text-decoration:none;/*quitar subrayado*/
+  font-weight: bold;/*poner una parte del texto en negrita*/
+ }
+ .lista_ordenada a:hover{
+    color:blue;/*pasar encima cambia de color*/
+ }
+ 
+ 
+/* Estilos para la sección inicio*/
+.inicio {
+    text-align: center;/*centrado*/
+}
+.inicio h2{
+    margin: 0;
+    margin-top: 10px;/*espacio arriba*/
+    color: black;/*color letra*/
+
+}
+.inicio p{
+    margin: 0;
+    margin-top: 10px;/*espacio arriba*/
+}
+/* Ajuste de imagen*/
+.inicio img {
+    display: flex;
+    justify-content: center;/*imagen centrada horizontalmente */
+    margin: 20px auto;/*espacio alrededor de la img */
+    width: 75%; /* tamaño imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+/*tabla de los horario de visitas a los lugares*/
+table {
+    width: 75%;/* ancho tabla */
+    margin-top: 20px;/* espacio arriba*/
+}
+table th{
+    background-color:lightslategray;/* color encabezado tabla*/
+}
+
+table, th, td {
+    border: 1px solid black;/*color bordes */
+}
+th, td {
+    padding: 10px;/*espacio interno*/
+    text-align:left;/* texto de la tabla ala izquierda*/
+}
+
+
+
+
+

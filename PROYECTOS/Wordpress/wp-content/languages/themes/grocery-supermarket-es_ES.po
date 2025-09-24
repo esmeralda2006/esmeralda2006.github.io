@@ -1,0 +1,785 @@
+# Translation of Themes - Grocery Supermarket in Spanish (Spain)
+# This file is distributed under the same license as the Themes - Grocery Supermarket package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-06-29 11:14:34+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Themes - Grocery Supermarket\n"
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Grocery Supermarket"
+msgstr "Grocery Supermarket"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Grocery Supermarket is a highly functional website template tailored for grocery stores, supermarkets, and convenience stores. Its user-friendly design caters to business owners in the retail industry, providing a platform to effectively showcase products and engage with customers online. Designed with the retail sector in mind, the theme offers a clean and organized layout that mirrors the aisles of a supermarket. You can easily create ecommerce websites for organic foods, daily groceries, vegetables, fruits, etc.Its visually appealing design features spacious sections for product categories, special promotions, featured items, and customer testimonials. The color palette and typography choices create a sense of familiarity and convenience, evoking the essence of a physical retail environment. Grocery Supermarket is equipped with a range of tools to enhance the shopping experience. Its responsive design ensures seamless navigation across devices, allowing customers to browse and shop effortlessly from their smartphones or tablets. The integration of an intuitive product catalog with filters simplifies product discovery, while a shopping cart and checkout system streamline the purchasing process. The Grocery Supermarket theme offers convenient inventory management, allowing store owners to update stock availability and prices in real time. Integrated customer reviews and ratings build trust and influence purchase decisions. Additionally, the theme can support various payment gateways, providing customers with flexible payment options."
+msgstr "Grocery Supermarket es una plantilla de sitio web muy funcional diseñada para tiendas de comestibles, supermercados y tiendas de conveniencia. Su diseño fácil de usar está dirigido a los propietarios de negocios del sector minorista, proporcionándoles una plataforma para mostrar eficazmente los productos y relacionarse con los clientes en línea. Diseñado pensando en el sector minorista, el tema ofrece un diseño limpio y organizado que refleja los pasillos de un supermercado. Puedes crear fácilmente sitios web de comercio electrónico para alimentos ecológicos, comestibles diarios, verduras, frutas, etc. Su diseño visualmente atractivo presenta amplias secciones para categorías de productos, promociones especiales, artículos destacados y testimonios de clientes. La paleta de colores y las opciones tipográficas crean una sensación de familiaridad y comodidad, evocando la esencia de un entorno minorista físico. Grocery Supermarket está equipado con una serie de herramientas para mejorar la experiencia de compra. Su diseño adaptable garantiza una navegación fluida en todos los dispositivos, permitiendo a los clientes navegar y comprar sin esfuerzo desde sus teléfonos inteligentes o tabletas. La integración de un catálogo de productos intuitivo con filtros simplifica el descubrimiento de productos, mientras que el carrito de la compra y el sistema de pago agilizan el proceso de compra. El tema Supermercado de comestibles ofrece una cómoda gestión del inventario, que permite a los propietarios de las tiendas actualizar la disponibilidad de existencias y los precios en tiempo real. Las opiniones y valoraciones integradas de los clientes generan confianza e influyen en las decisiones de compra. Además, el tema admite varias pasarelas de pago, proporcionando a los clientes opciones de pago flexibles."
+
+#: inc/customizer.php:1141
+msgid "Show / Hide Post Navigation"
+msgstr "Mostrar / Ocultar la navegación de entradas"
+
+#: inc/customizer.php:966
+msgid "Copyright Background Color"
+msgstr "Color de fondo del copyright"
+
+#: inc/customizer.php:905
+msgid "Footer Background Image"
+msgstr "Imagen de fondo de pie de página"
+
+#: inc/customizer.php:733
+msgid "500px"
+msgstr "500px"
+
+#: inc/customizer.php:731
+msgid "Add the slider height in px(eg. 500px)."
+msgstr "Añade la altura del carrusel en px(ej. 500px)."
+
+#: inc/customizer.php:730
+msgid "Slider Height"
+msgstr "Altura del carrusel"
+
+#: functions.php:410
+msgid "https://demo.themagnifico.net/eard/wathiqa/grocery-supermarket-free-doc/"
+msgstr "https://demo.themagnifico.net/eard/wathiqa/grocery-supermarket-free-doc/"
+
+#: inc/customizer.php:1165
+msgid "Add Comment Button Text"
+msgstr "Texto del botón de añadir comentario"
+
+#: inc/customizer.php:1151
+msgid "Add Comment Title"
+msgstr "Título de añadir comentario"
+
+#: functions.php:638
+msgid "View Demo"
+msgstr "Ver demo"
+
+#: functions.php:635
+msgid "Documentation"
+msgstr "Documentación"
+
+#: functions.php:634
+msgid "Get started"
+msgstr "Primeros pasos"
+
+#: functions.php:633
+msgid "Get Started With Theme By Clicking On Getting Started."
+msgstr "Comienza con el tema haciendo clic en «Primeros pasos»."
+
+#: functions.php:632
+msgid "Thank You For Choosing "
+msgstr "Gracias por elegir "
+
+#: comments.php:89 inc/customizer.php:1167
+msgid "Post Comment"
+msgstr "Publicar comentario"
+
+#: comments.php:88 inc/customizer.php:1153
+msgid "Leave a Reply"
+msgstr "Deja una respuesta"
+
+#: inc/customizer.php:707
+msgid "Slider Image Opacity"
+msgstr "Opacidad de imagen del carrusel"
+
+#: inc/customizer.php:335
+msgid "Hide Shop Page Sidebar"
+msgstr "Ocultar barra lateral de la página de tienda"
+
+#: inc/customizer.php:309
+msgid "Hide Single Product Page Sidebar"
+msgstr "Ocultar barra lateral de página de producto individual"
+
+#: functions.php:146 inc/customizer.php:347
+msgid "Woocommerce Shop Page Sidebar"
+msgstr "Barra lateral de la página de tienda de WooCommerce"
+
+#: functions.php:136 inc/customizer.php:321
+msgid "Woocommerce Single Product Page Sidebar"
+msgstr "Barra lateral de la página de producto de WooCommerce"
+
+#: inc/customizer.php:293
+msgid "Product per row"
+msgstr "Productos por fila"
+
+#: inc/customizer.php:93
+msgid "Logo Width"
+msgstr "Ancho del logo"
+
+#: inc/customizer.php:114
+msgid "Enable Disable Tagline"
+msgstr "Activar / desactivar descripción corta"
+
+#: inc/customizer.php:103
+msgid "Enable Disable Title"
+msgstr "Activar / desactivar título"
+
+#: inc/customizer.php:207
+msgid "Preloader Second Dot Color"
+msgstr "Color del segundo punto del precargador"
+
+#: inc/customizer.php:197
+msgid "Preloader First Dot Color"
+msgstr "Color del primer punto del precargador"
+
+#: inc/customizer.php:187
+msgid "Preloader Background Color"
+msgstr "Color de fondo del precargador"
+
+#: inc/customizer.php:1066
+msgid "Check this box to enable button on post page."
+msgstr "Marca esta casilla para activar el botón en la página de entradas."
+
+#: inc/customizer.php:1064
+msgid "Enable Post Page Button"
+msgstr "Activar botón de página de entradas"
+
+#: inc/customizer.php:1132
+msgid "Check this box to enable post tags on single post."
+msgstr "Marca esta casilla para activar etiquetas en entrada individual."
+
+#: inc/customizer.php:1130
+msgid "Enable Single Post Tags"
+msgstr "Activar etiquetas de entrada individual"
+
+#: inc/customizer.php:1210
+msgid "Check this box to enable page thumbnail on single page."
+msgstr "Marca esta casilla para activar la miniatura de página en páginas individuales."
+
+#: inc/customizer.php:1208
+msgid "Enable Single Page Thumbnail"
+msgstr "Activar miniatura de página individual"
+
+#: inc/customizer.php:1199
+msgid "Check this box to enable title on single page."
+msgstr "Marca esta casilla para activar el título en página individual."
+
+#: inc/customizer.php:1197
+msgid "Enable Single Page Title"
+msgstr "Activar título de página individual"
+
+#: inc/customizer.php:1187
+msgid "Page Settings"
+msgstr "Ajustes de página"
+
+#: inc/customizer.php:1018
+msgid "Check this box to enable thumbnail on post page."
+msgstr "Marca esta casilla para activar la miniatura en la página de entradas."
+
+#: inc/customizer.php:1016
+msgid "Enable Post Page Thumbnail"
+msgstr "Activar la miniatura de la página de entradas"
+
+#: inc/customizer.php:1007
+msgid "Check this box to enable meta on post page."
+msgstr "Marca esta casilla para activar meta en la página de la entradas."
+
+#: inc/customizer.php:1005
+msgid "Enable Post Page Meta"
+msgstr "Activar meta de las entradas"
+
+#: inc/customizer.php:996
+msgid "Check this box to enable title on post page."
+msgstr "Marca esta casilla para activar el título en la página de entradas."
+
+#: inc/customizer.php:994
+msgid "Enable Post Page Title"
+msgstr "Activar el título de la página de entradas"
+
+#: inc/customizer.php:1110
+msgid "Check this box to enable title on single post."
+msgstr "Marca esta casilla para activar el título en entradas individuales."
+
+#: inc/customizer.php:1108
+msgid "Enable Single Post Title"
+msgstr "Activar título de entrada individual"
+
+#: inc/customizer.php:1099
+msgid "Check this box to enable single post meta such as post date, author, category, comment etc."
+msgstr "Marca esta casilla para activar meta de entradas individuales, como fecha de entrada, autor, categoría, comentarios, etc."
+
+#: inc/customizer.php:1097
+msgid "Enable Single Post Meta"
+msgstr "Activar meta de entradas individuales"
+
+#: inc/customizer.php:1088
+msgid "Check this box to enable post thumbnail on single post."
+msgstr "Marca esta casilla para activar la miniatura de entrada en entradas individuales."
+
+#: inc/customizer.php:1086
+msgid "Enable Single Post Thumbnail"
+msgstr "Activar miniatura en entradas individuales"
+
+#: inc/customizer.php:984
+msgid "Post Settings"
+msgstr "Ajustes de entradas"
+
+#: functions.php:176
+msgid "Footer Column 3"
+msgstr "Columna 3 del pie de página"
+
+#: functions.php:166
+msgid "Footer Column 2"
+msgstr "Columna 2 del pie de página"
+
+#: functions.php:156
+msgid "Footer Column 1"
+msgstr "Columna 1 del pie de página"
+
+#. translators: 1: Theme author.
+#: footer.php:93
+msgid "by %1$s."
+msgstr "de %1$s."
+
+#. translators: 1: Theme name,
+#: footer.php:88
+msgid " %1$s "
+msgstr " %1$s "
+
+#: inc/customizer.php:932
+msgid "Show / Hide Copyright"
+msgstr "Mostrar / ocultar copyright"
+
+#: inc/customizer.php:234 inc/customizer.php:366 inc/customizer.php:748
+#: inc/customizer.php:921 inc/customizer.php:956
+msgid "Center"
+msgstr "Centrar"
+
+#: inc/customizer.php:233 inc/customizer.php:365 inc/customizer.php:747
+#: inc/customizer.php:920 inc/customizer.php:955
+msgid "Left"
+msgstr "Izquierda"
+
+#: inc/customizer.php:232 inc/customizer.php:364 inc/customizer.php:749
+#: inc/customizer.php:922 inc/customizer.php:957
+msgid "Right"
+msgstr "Derecha"
+
+#: inc/customizer.php:217
+msgid "Show Theme Scroll To Top"
+msgstr "Mostrar el «Volver arriba» del tema"
+
+#: inc/customizer.php:145 inc/customizer.php:409 inc/customizer.php:525
+#: inc/customizer.php:575 inc/customizer.php:776 inc/customizer.php:879
+#: inc/customizer.php:977 inc/customizer.php:1180 inc/customizer.php:1220
+msgid "Customizer Options"
+msgstr "Opciones del personalizador"
+
+#: functions.php:418
+msgid "Theme Options"
+msgstr "Opciones del tema"
+
+#: functions.php:608
+msgid "Go Premium"
+msgstr "Hazte premium"
+
+#: functions.php:600
+msgid "Importable Demo Content\t"
+msgstr "Contenido de ejemplo importable\t"
+
+#: functions.php:595
+msgid "Customize Background Color"
+msgstr "Personalizar el color de fondo"
+
+#: functions.php:590
+msgid "Customize Sidebar Color"
+msgstr "Personalizar el color de la barra lateral"
+
+#: functions.php:585
+msgid "Customize Footer Color"
+msgstr "Personalizar el color del pie de página"
+
+#: functions.php:580
+msgid "Customize Blog Feed Color"
+msgstr "Personalizar el color del feed del blog"
+
+#: functions.php:575
+msgid "Customize Post/Page Color"
+msgstr "Personalizar el color de las entradas y páginas"
+
+#: functions.php:570
+msgid "Customize Navigation Color"
+msgstr "Personalizar el color de la navegación"
+
+#: functions.php:565
+msgid "Customize Upper Widgets Colors"
+msgstr "Personalizar los colores de los widgets superiores"
+
+#: functions.php:560
+msgid "Replace Copyright Text"
+msgstr "Reemplazar el texto de copyright"
+
+#: functions.php:555
+msgid "Only Show Upper Widgets On Front Page"
+msgstr "Mostrar los widgets superiores solo en la página de inicio"
+
+#: functions.php:550
+msgid "Full Width (Hide Sidebar)"
+msgstr "Ancho completo (ocultar la barra lateral)"
+
+#: functions.php:545
+msgid "Custom Text On Header Image"
+msgstr "Texto personalizado en la imagen de la cabecera"
+
+#: functions.php:540
+msgid "Show Header Everywhere"
+msgstr "Mostrar la cabecera en todas partes"
+
+#: functions.php:535
+msgid "Only Show Header Image On Front Page"
+msgstr "Mostrar la imagen de cabecera solo en la página de inicio"
+
+#: functions.php:530
+msgid "Pagespeed Plugin"
+msgstr "Plugin Pagespeed"
+
+#: functions.php:525
+msgid "Easy Google Fonts"
+msgstr "Easy Google Fonts"
+
+#: functions.php:519
+msgid "Recent Posts Widget"
+msgstr "Widget de entradas recientes"
+
+#: functions.php:514
+msgid "Fully SEO Optimized"
+msgstr "Completamente optimizado para SEO"
+
+#: functions.php:509
+msgid "Premium Support"
+msgstr "Soporte premium"
+
+#: functions.php:503
+msgid "Hide Logo Text"
+msgstr "Ocultar el texto del logotipo"
+
+#: functions.php:498
+msgid "Custom Navigation Logo Or Text"
+msgstr "Logotipo o texto de navegación personalizado"
+
+#: functions.php:493
+msgid "Header Background Color"
+msgstr "Color de fondo de la cabecera"
+
+#: functions.php:487
+msgid "Premium Version"
+msgstr "Versión Premium"
+
+#: functions.php:486
+msgid "Basic Version"
+msgstr "Versión básica"
+
+#: functions.php:485
+msgid "Theme Feature"
+msgstr "Características del tema"
+
+#: functions.php:477
+msgid "View Theme Demo"
+msgstr "Ver demo del tema"
+
+#: functions.php:474
+msgid "Checkout Documentation"
+msgstr "Comprobar la documentación"
+
+#: functions.php:471
+msgid "Free Vs Premium"
+msgstr "Gratis vs Premium"
+
+#: functions.php:451 functions.php:454
+msgid "Review"
+msgstr "Reseña"
+
+#: functions.php:445
+msgid "Get Premium"
+msgstr "Hazte Premium"
+
+#: functions.php:443
+msgid "Our premium theme comes with extended features like demo content import , responsive layouts etc."
+msgstr "Nuestro tema premium viene con características extendidas como la importación de contenido de demostración, diseños adaptables, etc."
+
+#: functions.php:442
+msgid "Checkout Premium"
+msgstr "Comprobar premium"
+
+#: functions.php:433 functions.php:436
+msgid "Contact Support"
+msgstr "Contactar con soporte"
+
+#: functions.php:428
+msgid "Welcome To "
+msgstr "Bienvenido a "
+
+#: inc/customizer.php:176
+msgid "Show Theme Preloader"
+msgstr "Mostrar el precargador del tema"
+
+#: inc/customizer.php:152
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+#: functions.php:418
+msgid " Theme Options"
+msgstr " Opciones del tema"
+
+#: functions.php:398
+msgid "https://wordpress.org/support/theme/grocery-supermarket/reviews/"
+msgstr "https://wordpress.org/support/theme/grocery-supermarket/reviews/"
+
+#: functions.php:395
+msgid "https://wordpress.org/support/theme/grocery-supermarket/"
+msgstr "https://wordpress.org/support/theme/grocery-supermarket/"
+
+#: inc/customizer.php:17
+msgid "Buy Grocery Supermarket Pro"
+msgstr "Compra Grocery Supermarket Pro"
+
+#: functions.php:452
+msgid "If You love Grocery Supermarket theme then we would appreciate your review about our theme."
+msgstr "Si te gusta el tema Grocery Supermarket, te agradeceríamos que nos dejaras una reseña sobre él."
+
+#: functions.php:434
+msgid "Thank you for trying Grocery Supermarket , feel free to contact us for any support regarding our theme."
+msgstr "Gracias por probar Grocery Supermarket, no dudes en ponerte en contacto con nosotros para cualquier ayuda relacionada con nuestro tema."
+
+#: functions.php:407
+msgid "https://demo.themagnifico.net/eard/wathiqa/grocery-supermarket-doc/"
+msgstr "https://demo.themagnifico.net/eard/wathiqa/grocery-supermarket-doc/"
+
+#: functions.php:401
+msgid "https://demo.themagnifico.net/grocery-supermarket/"
+msgstr "https://demo.themagnifico.net/grocery-supermarket/"
+
+#: functions.php:404
+msgid "https://www.themagnifico.net/products/supermarket-wordpress-theme"
+msgstr "https://www.themagnifico.net/products/supermarket-wordpress-theme"
+
+#. Template Name of the theme
+msgid "Home Template"
+msgstr "Plantilla de la página de inicio"
+
+#: functions.php:128
+msgid "Add widgets here."
+msgstr "Añade widgets aquí."
+
+#: functions.php:126
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: inc/customizer.php:490
+msgid "Topbar Text"
+msgstr "Texto de la barra superior"
+
+#: footer.php:105
+msgid "TOP"
+msgstr "ARRIBA"
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:79
+msgid "Proudly powered by %s"
+msgstr "Funciona gracias a %s"
+
+#. Template Name of the theme
+#: inc/customizer.php:325 inc/customizer.php:351
+msgid "Right Sidebar"
+msgstr "Barra lateral derecha"
+
+#. Template Name of the theme
+#: inc/customizer.php:324 inc/customizer.php:350
+msgid "Left Sidebar"
+msgstr "Barra lateral izquierda"
+
+#: inc/customizer.php:30
+msgid "GET PREMIUM"
+msgstr "OBTENER PREMIUM"
+
+#: comments.php:80
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:56 comments.php:70
+msgid "Newer Comments"
+msgstr "Comentarios más recientes"
+
+#: comments.php:55 comments.php:69
+msgid "Older Comments"
+msgstr "Comentarios anteriores"
+
+#: comments.php:53 comments.php:67
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s comentario sobre «%2$s»"
+msgstr[1] "%1$s comentarios sobre «%2$s»"
+
+#. translators: %s: post title
+#: comments.php:32
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Un comentario sobre «%s»"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:44
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que no encontramos lo que estás buscando. Puede que una búsqueda te ayude."
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Lo sentimos, pero nada coincide con tus términos de búsqueda. Por favor, prueba de nuevo con algunas palabras diferentes."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "¿Preparado para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "No se ha encontrado nada"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Seguir leyendo<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/content-page.php:31 template-parts/content-single.php:51
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: template-parts/navigation/nav.php:14
+msgid "Top Menu"
+msgstr "Menú superior"
+
+#: inc/template-tags.php:167
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está pendiente de moderación."
+
+#: inc/template-tags.php:142 inc/template-tags.php:162
+msgid "Edit"
+msgstr "Editar"
+
+#: inc/template-tags.php:141
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#. translators: %s: post title
+#: inc/template-tags.php:42
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Deja un comentario<span class=\"screen-reader-text\"> en %s</span>"
+
+#. translators: %s: post date
+#. translators: %s: post author
+#: inc/template-tags.php:27 inc/template-tags.php:33
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr "<span class=\"screen-reader-text\">Publicado </span> %s"
+
+#: inc/customizer.php:940
+msgid "Replace the footer text"
+msgstr "Reemplazar el texto del pie de página"
+
+#: inc/customizer.php:886
+msgid "Footer"
+msgstr "Pie de página"
+
+#: inc/customizer.php:682
+msgid "Select Slide Page"
+msgstr "Seleccionar página de diapositiva"
+
+#: inc/customizer.php:627
+msgid "Slider Settings"
+msgstr "Ajustes del carrusel"
+
+#: inc/customizer.php:562
+msgid "Phone Number"
+msgstr "Número de teléfono"
+
+#: woocommerce/checkout/form-checkout.php:51
+msgid "Your order"
+msgstr "Tu pedido"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "Debes estar conectado para para poder finalizar la compra."
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Buscar"
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Buscar &hellip;"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Parece que aquí no hay nada. ¿por qué no pruebas uno de estos enlaces o la búsqueda?"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Vaya! No se puede encontrar esa página."
+
+#. translators: %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Resultados de la búsqueda: %s"
+
+#: functions.php:65
+msgid "Footer Menu"
+msgstr "Menú del pie de página"
+
+#: functions.php:64
+msgid "Primary"
+msgstr "Principal"
+
+#: header.php:34
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: inc/customizer.php:628
+msgid "Here you have to add 3 different pages in below dropdown. Note: Image Dimensions 1400 x 550 px"
+msgstr "Aquí tienes que añadir 3 páginas diferentes en el desplegable de abajo. Nota: Dimensiones de la imagen 1400 x 550 px"
+
+#: template-parts/topheader/topheader1.php:53
+msgid "shopping cart"
+msgstr "carrito de la compra"
+
+#: template-parts/content-audio.php:55 template-parts/content-gallery.php:43
+#: template-parts/content-image.php:38 template-parts/content-search.php:21
+#: template-parts/content-video.php:54 template-parts/content.php:40
+msgid "Read More"
+msgstr "Leer más"
+
+#: template-parts/content-audio.php:43 template-parts/content-gallery.php:31
+#: template-parts/content-image.php:26 template-parts/content-search.php:15
+#: template-parts/content-single.php:30 template-parts/content-video.php:42
+#: template-parts/content.php:28
+msgid "BY"
+msgstr "Por"
+
+#: inc/customizer.php:540
+msgid "Button Text"
+msgstr "Texto del botón"
+
+#: inc/customizer.php:532
+msgid "Header Option"
+msgstr "Opciones de la cabecera"
+
+#: inc/customizer.php:551
+msgid "Button Url"
+msgstr "URL del botón"
+
+#: template-parts/topheader/topheader1.php:53
+msgid "Cart"
+msgstr "Carrito"
+
+#: inc/customizer.php:791
+msgid "Heading"
+msgstr "Encabezado"
+
+#: template-parts/topheader/mainheader.php:15
+msgid "All Categories"
+msgstr "Todas las categorías"
+
+#: template-parts/topheader/topheader1.php:60
+#: template-parts/topheader/topheader1.php:64
+msgid "Account"
+msgstr "Cuenta"
+
+#: inc/customizer.php:867
+msgid "Select category to display products "
+msgstr "Selecciona la categoría de la que mostrar los productos "
+
+#: inc/customizer.php:830
+msgid "Tab Heading"
+msgstr "Encabezado de la pestaña"
+
+#: inc/customizer.php:813
+msgid "Types of Kitchen to show"
+msgstr "Tipos de cocina que mostrar"
+
+#: inc/customizer.php:802
+msgid "Sub Heading"
+msgstr "Subencabezado"
+
+#: inc/customizer.php:783
+msgid "Best Sells Option"
+msgstr "Opciones de más vendidos"
+
+#: inc/customizer.php:512
+msgid "Wishlist url"
+msgstr "URL de lista de deseos"
+
+#: inc/customizer.php:501
+msgid "Wishlist button"
+msgstr "Botón de lista de deseos"
+
+#: inc/customizer.php:479
+msgid "Button Url 3"
+msgstr "URL del botón 3"
+
+#: inc/customizer.php:468
+msgid "Button Text 3"
+msgstr "Texto del botón 3"
+
+#: inc/customizer.php:457
+msgid "Button Url 2"
+msgstr "URL del botón 2"
+
+#: inc/customizer.php:446
+msgid "Button Text 2"
+msgstr "Texto del botón 2"
+
+#: inc/customizer.php:435
+msgid "Button Url 1"
+msgstr "URL del botón 1"
+
+#: inc/customizer.php:424
+msgid "Button Text 1"
+msgstr "Texto del botón 1"
+
+#: inc/customizer.php:416
+msgid "Topbar Option"
+msgstr "Opciones de la barra superior"
+
+#: inc/customizer.php:14
+msgid "Grocery Supermarket Pro"
+msgstr "Grocery Supermarket Pro"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.themagnifico.net/"
+msgstr "https://www.themagnifico.net/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "TheMagnifico52"
+msgstr "TheMagnifico52"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.themagnifico.net/products/free-grocery-wordpress-theme"
+msgstr "https://www.themagnifico.net/products/free-grocery-wordpress-theme"

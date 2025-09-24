@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!---cabecera comun-->
+  <header>
+    <h1>Descubre Málaga</h1>
+    <nav>
+      <ul>
+        <li><a href="./PaginaPrincipal.html">Inicio</a></li>
+        <li><a href="./lugares.html">Lugares</a></li>
+        <li><a href="./gastronomia.html">Gastronomia</a></li>
+        <li><a href="./contacto.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--contenido principal-->
+    <h2>Contacto</h2>
+    <p>Responde este formulario(Opcional).Dime tu experiencia con la pàgina web o sugiere algun cambio para mejorar
+      nuestra pagina...</p>
+    <form action="#">
+      <label for="name">Nombre</label>
+      <input type="text" id="Nombre" name="Nombre" required>
+      <label for="email">Email</label>
+      <input type="text" id="Email" name="Email" required>
+      <label for="Mensaje">Mensaje</label>
+      <textarea id="Mensaje" name="Mensaje" required></textarea>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">¿Cual fue tu experiencia con la página web?</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcion1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Mala
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcion2">
+              <label class="form-check-label" for="gridRadios2">
+                Buena
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="opcion3" disabled>
+              <label class="form-check-label" for="gridRadios3">
+                Excelente
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+
+
+
+
+
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <!--Pie Comun-->
+  <footer>
+    <p>&copy;2024 Turismo en Málaga</p>
+  </footer>
+</body>
+
+</html>
