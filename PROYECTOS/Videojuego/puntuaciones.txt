@@ -1,0 +1,5 @@
+& C:/Users/PC/AppData/Local/Programs/Python/Python313/python.exe c:/Users/PC/Desktop/Videojuego/pygame1.py - 39
+& C:/Users/PC/AppData/Local/Programs/Python/Python313/python.exe c:/Users/PC/Desktop/Videojuego/pygame1.py - 42
+& C:/Users/PC/AppData/Local/Programs/Python/Python313/python.exe c:/Users/PC/Desktop/Videojuego/pygame1.py - 25
+& C:/Users/PC/AppData/Local/Programs/Python/Python313/python.exe c:/Users/PC/Desktop/Videojuego/pygame1.py - 46
+& C:/Users/PC/AppData/Local/Programs/Python/Python313/python.exe c:/Users/PC/Desktop/Videojuego/pygame1.py - 25
