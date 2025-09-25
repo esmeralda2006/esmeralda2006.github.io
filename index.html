@@ -10,8 +10,8 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #0d1117; /* Fondo oscuro elegante */
-      color: #e6edf3; /* Texto claro */
+      background: #0d1117; 
+      color: #e6edf3; 
     }
 
     header {
@@ -26,14 +26,14 @@
       justify-content: flex-start;
       max-width: 900px;
       margin: 0 auto;
-      gap: 30px; /* Espacio entre imagen y texto */
+      gap: 30px; 
     }
 
     header img {
       width: 180px;
       height: 180px;
-      border-radius: 50%; /* Imagen circular */
-      border: 3px solid #00e676; /* Verde neón alrededor */
+      border-radius: 50%; 
+      border: 3px solid #00e676; 
       object-fit: cover;
     }
 
@@ -51,14 +51,14 @@
       max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      background: #161b22; /* Fondo gris oscuro */
+      background: #161b22; 
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3); /* Sombra morada suave */
+      box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3); 
     }
 
     h2 {
-      color: #9b59b6; /* Morado en títulos */
-      border-left: 5px solid #00e676; /* Verde neón como contraste */
+      color: #9b59b6; 
+      border-left: 5px solid #00e676; 
       padding-left: 10px;
     }
 
@@ -73,21 +73,42 @@
 
     a {
       text-decoration: none;
-      color: #9b59b6; /* Morado en enlaces */
+      color: #9b59b6; 
       font-weight: bold;
       transition: 0.3s;
     }
 
     a:hover {
-      color: #00e676; /* Verde neón al pasar el mouse */
+      color: #00e676; 
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #6a1b9a; /* Morado oscuro elegante */
+      background: #6a1b9a; 
       color: white;
       margin-top: 40px;
+    }
+
+    /* Estilos para galerías */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(155, 89, 182, 0.7);
     }
   </style>
 </head>
@@ -107,15 +128,12 @@
     <p>
       Soy una estudiante muy aplicada y apasionada por la tecnología 👩‍💻, con un fuerte interés en el desarrollo de aplicaciones multiplataforma y la innovación digital. Me motiva aprender constantemente y poner en práctica los conocimientos adquiridos 💡.
     </p>
-
     <p>
       Durante mi primer año, he desarrollado una sólida base en programación y desarrollo web, trabajando con HTML, CSS, XML, XSD, XSLT 🌐 y gestionando proyectos en WordPress 📝. Además, he adquirido experiencia en bases de datos, incluyendo SQL, PL/SQL, DDL y DML, así como en la conexión de aplicaciones con bases de datos 🗄️.
     </p>
-
     <p>
       En el área de programación, he profundizado en Java desde cero, abordando conceptos de programación orientada a objetos (POO), arrays, colecciones, serialización, ficheros 📂, y desarrollando interfaces gráficas con Java Swing 🎨. También he trabajado con Python 🐍, fortaleciendo mis habilidades en lógica de programación y resolución de problemas.
     </p>
-
     <p>
       He participado en proyectos importantes y finales de clase, colaborando en equipo con mis compañeros 🤝, lo que me ha permitido desarrollar habilidades de cooperación, comunicación y gestión de tareas. Soy una persona responsable, creativa y con gran disposición para enfrentar nuevos retos, siempre buscando oportunidades para crecer profesionalmente y contribuir en proyectos innovadores 🚀.
     </p>
@@ -151,18 +169,40 @@
 
   <section>
     <h2>Proyectos</h2>
-   <ul>
-  <li>🏥 Gestión de Personal del Hospital Carlos Haya</li>
-  <li>📋 APP Python Gestor de Tareas</li>
-  <li>🌐 Página Web en HTML</li>
-  <li>📝 Proyecto Wordpress</li>
-  <li>✈️ Juego de Avión (con puntaje y vidas) con Python</li>
-  <li>
-    <a href="https://github.com/esmeralda2006/esmeralda2006.github.io/tree/main/PROYECTOS" target="_blank">
-      🚀 Ver todos mis proyectos en GitHub
-    </a>
-  </li>
-</ul>
+    <ul>
+      <li>🏥 Gestión de Personal del Hospital Carlos Haya</li>
+      <li>📋 APP Python Gestor de Tareas</li>
+      <li>🌐 Página Web en HTML</li>
+      <li>📝 Proyecto Wordpress</li>
+      <li>✈️ Juego de Avión (con puntaje y vidas) con Python</li>
+      <li>
+        <a href="https://github.com/esmeralda2006/esmeralda2006.github.io/tree/main/PROYECTOS" target="_blank">
+          🚀 Ver todos mis proyectos en GitHub
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Galería de Certificaciones</h2>
+    <div class="galeria">
+      <img src="IMG/certificados/2.png" alt="Certificación 1">
+      <img src="IMG/certificados/3.png" alt="Certificación 2">
+      <img src="IMG/certificados/4.png" alt="Certificación 3">
+       <img src="IMG/certificados/5.png" alt="Certificación 3">
+       <img src="IMG/certificados/6.png" alt="Certificación 3">
+    </div>
+  </section>
+
+  <section>
+    <h2>Galería de Proyectos</h2>
+    <div class="galeria">
+      <img src="IMG/imagenes/hospital.png" alt="Gestión de Personal del Hospital Carlos Haya">
+      <img src="IMG/imagenes/trello.png" alt="APP Python Gestor de Tareas">
+      <img src="IMG/imagenes/html.png" alt="Página Web en HTML">
+      <img src="IMG/imagenes/wordpres.png" alt="Proyecto Wordpress">
+      <img src="IMG/imagenes/juego.png" alt="Juego de Avión con Python">
+    </div>
   </section>
 
   <section>
@@ -180,4 +220,3 @@
   </footer>
 </body>
 </html>
-
