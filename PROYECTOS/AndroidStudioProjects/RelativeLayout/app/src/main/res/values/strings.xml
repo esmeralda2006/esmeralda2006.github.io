@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RelativeLayoutDemo</string>
+    <string name="titulo">Relative Layout</string>
+    <string name="introduce_nombre">Introduce tu nombre:</string>
+    <string name="hint_nombre">Escribe aquí tu nombre</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="campo_borrado">Campo borrado</string>
+</resources>

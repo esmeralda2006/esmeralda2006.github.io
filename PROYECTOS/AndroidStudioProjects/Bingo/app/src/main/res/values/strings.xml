@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bingo</string>
+
+
+    <string name="btn_generar">Generar número</string>
+
+
+    <string name="historial">Historial</string>
+    <string name="bingo">¡BINGO!</string>
+</resources>

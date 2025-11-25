@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spHistorial" type="id" />
+    <item name="lvCartonA" type="id" />
+    <item name="lvCartonB" type="id" />
+    <item name="btnGenerar" type="id" />
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Table Layout</string>
+    <string name="label_usuario" translatable="false">Usuario:</string>
+    <string name="label_contrasena" translatable="false">Contraseña:</string>
+    <string name="hint_usuario" translatable="false">Fatima Valle</string>
+    <string name="hint_contrasena" translatable="false">Introduce tu contraseña</string>
+    <string name="btn_login" translatable="false">Login</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppAscensor</string>
+    <string name="crear">Crear</string>
+    <string name="cuantos_pisos_deseas_crear">¿Cuántos pisos deseas crear?</string>
+    <string name="pregunta_pisos">Pregunta pisos</string>
+    <string name="cantidadPisos">Cantidad de pisos</string>
+    <string name="ingresa_pisos">Ingresa el número de pisos</string>
+    <string name="piso_actual">Piso actual</string>
+    <string name="direccion">Dirección</string>
+</resources>

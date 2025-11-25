@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BUSCAMINAS</string>
+    <string name="cantidad_botones">Cantidad de botones (4–30)</string>
+    <string name="crear">Crear</string>
+    <string name="reset">Reiniciar</string>
+    <string name="visualizar_minas">Visualizar minas</string>
+</resources>

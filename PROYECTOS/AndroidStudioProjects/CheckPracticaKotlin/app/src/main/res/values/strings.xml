@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CheckPractica</string>
+    <string name="nombre">Nombre</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="edad">Edad</string>
+    <string name="deportes_que_practicas">Deportes que practicas:</string>
+    <string name="guardar">Guardar</string>
+    <string name="formulario">Formulario</string>
+
+
+    <string-array name="lista_deportes">
+        <item>Fútbol</item>
+        <item>Basket</item>
+        <item>Tenis</item>
+        <item>Vóley</item>
+        <item>Padel</item>
+    </string-array>
+</resources>

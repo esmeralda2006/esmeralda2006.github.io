@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnGenerar" type="id" />
+    <item name="spHistorial" type="id" />
+    <item name="lvBingo" type="id" />
+</resources>

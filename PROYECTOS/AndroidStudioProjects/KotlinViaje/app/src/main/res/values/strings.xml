@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Viaje</string>
+    <string name="precio_0">Precio = 0 €</string>
+    <string name="personas_ocio">Personas Ocio</string>
+    <string name="personas_comida">Personas Comida</string>
+    <string name="personas_hotel">Personas Hotel</string>
+    <string name="personas_transporte">Personas Transporte</string>
+    <string name="calculadora_de_viaje">Calculadora de Viaje</string>
+
+    <string-array name="listaOpciones">
+        <item>Transporte</item>
+        <item>Hotel</item>
+        <item>Comida</item>
+        <item>Ocio</item>
+    </string-array>
+
+    <string-array name="Transporte">
+        <item>Autobus - 100</item>
+        <item>Avion - 800</item>
+        <item>Tren - 150</item>
+        <item>Propio - 50</item>
+    </string-array>
+
+    <string-array name="Hotel">
+        <item>Ibis - 500</item>
+        <item>Hilton - 300</item>
+        <item>Malaga Palacio - 200</item>
+    </string-array>
+
+    <string-array name="Comida">
+        <item>Completa - 200</item>
+        <item>Media - 100</item>
+        <item>Desayuno - 50</item>
+        <item>Cafe - 100</item>
+    </string-array>
+
+    <string-array name="Ocio">
+        <item>Cultural - 200</item>
+        <item>Fiestas - 100</item>
+        <item>Libro - 50</item>
+        <item>Bailar - 50</item>
+        <item>Jugar - 50</item>
+    </string-array>
+</resources>

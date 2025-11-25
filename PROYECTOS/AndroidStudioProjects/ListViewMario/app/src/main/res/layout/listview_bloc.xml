@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_view_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/btn_star_big_on"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_nombre"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Valor energético -->
+        <TextView
+            android:id="@+id/txt_valorEner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_valorEner"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_valorEner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Cantidad -->
+        <TextView
+            android:id="@+id/txt_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cantidad"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

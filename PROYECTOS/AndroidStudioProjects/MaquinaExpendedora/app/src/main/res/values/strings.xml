@@ -1,0 +1,15 @@
+<resources>
+    <string-array name="bebidas">
+        <item>Bebida A-0-80</item>
+        <item>Bebida B-1-20</item>
+        <item>Bebida C-3-10</item>
+        <item>Bebida D-1-10</item>
+    </string-array>
+    <string name="seleccione_bebida_y_dinero">Seleccione bebida y dinero</string>
+    <string name="centimos">Centimos</string>
+    <string name="app_name" />
+    <string name="resultado">Resultado:</string>
+    <string name="c_ntimos">Céntimos:</string>
+    <string name="m_quina_expendedora">Máquina Expendedora</string>
+    <string name="euro">Euros:</string>/>
+</resources>

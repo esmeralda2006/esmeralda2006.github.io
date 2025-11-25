@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="title_relative_layout">RelativeLayout</string>
+    <string name="first_name_label">First Name:</string>
+    <string name="second_name_label">Second Name:</string>
+    <string name="hint_first_name">Enter First Name</string>
+    <string name="hint_second_name">Enter Second Name</string>
+    <string name="submit_button">Submit</string>
+    <string name="reset_button">Reset</string>
+    <string name="toast_fill_both">Please fill in both names</string>
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculadora_de_viajes"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center" />
+
+        <!-- Transporte -->
+        <TextView
+            android:text="@string/transporte"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgTransporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbAutobus"
+                android:text="@string/autob_s_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbAvion"
+                android:text="@string/avi_n_800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbTren"
+                android:text="@string/tren_150"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbPropio"
+                android:text="@string/propio_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/personasTransporte"
+            android:hint="@string/cantidad_personas_transporte"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Hotel -->
+        <TextView
+            android:text="@string/hotel"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbIbis"
+                android:text="@string/ibis_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbHilton"
+                android:text="@string/hilton_300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbMalaga"
+                android:text="@string/m_laga_palacio_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/personasHotel"
+            android:hint="@string/cantidad_personas_hotel"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Comida -->
+        <TextView
+            android:text="@string/comida"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgComida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbCompleta"
+                android:text="@string/completa_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbMedia"
+                android:text="@string/media_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbDesayuno"
+                android:text="@string/desayuno_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/personasComida"
+            android:hint="@string/cantidad_personas_comida"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Ocio -->
+        <TextView
+            android:text="@string/ocio"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgOcio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/rbCultural"
+                android:text="@string/cultural_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbFiestas"
+                android:text="@string/fiestas_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton android:id="@+id/rbLibro"
+                android:text="@string/libro_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/personasOcio"
+            android:hint="@string/cantidad_personas_ocio"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/calculoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/precio_0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:background="#E0E0E0"
+            android:padding="16dp"
+            android:elevation="3dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp" />
+    </LinearLayout>
+</ScrollView>

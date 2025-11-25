@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Alimentos</string>
+    <string name="lbl_cantidad">Cantidad:</string>
+    <string name="lbl_nombre">Nombre:</string>
+    <string name="lbl_valorEner">Valor Energético:</string>
+    <string name="btn_add">Añadir</string>
+    <string-array name="array_maestro">
+        <item>@array/comida1</item>
+        <item>@array/comida2</item>
+    </string-array>
+    <string-array name="comida1">
+        <item>Filete a la plancha</item>
+        <item>100Kcal</item>
+    </string-array>
+    <string-array name="comida2">
+        <item>Macarrones</item>
+        <item>120Kcal</item>
+    </string-array>
+</resources>

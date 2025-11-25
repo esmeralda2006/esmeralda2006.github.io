@@ -1,0 +1,42 @@
+<resources>
+    <string-array name="bebidas">
+        <item>Bebida A-1-20</item>
+        <item>Bebida B-2-80</item>
+        <item>Bebida C-3-10</item>
+    </string-array>
+    <string-array name="lista_euros">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="lista_centimos">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+    </string-array>
+
+    <string name="seleccione_bebida_y_dinero">Seleccione bebida y dinero</string>
+    <string name="centimos">Centimos</string>
+    <string name="app_name" />
+    <string name="resultado">Resultado:</string>
+    <string name="c_ntimos">Céntimos:</string>
+    <string name="m_quina_expendedora">Máquina Expendedora</string>
+    <string name="euro">Euros:</string>
+
+</resources>
