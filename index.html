@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Portafolio de Fátima Esmeralda Valle Argueta</title>
+
   <link rel="stylesheet" href="css/style.css">
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,7 +46,7 @@
     }
 
     .header-text p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin-top: 10px;
     }
 
@@ -62,13 +65,19 @@
       padding-left: 10px;
     }
 
+    h3 {
+      color: #e6edf3;
+      margin-bottom: 5px;
+    }
+
     ul {
       list-style: none;
       padding: 0;
     }
 
     ul li {
-      margin: 8px 0;
+      margin: 10px 0;
+      line-height: 1.5;
     }
 
     a {
@@ -90,7 +99,7 @@
       margin-top: 40px;
     }
 
-    /* Galerías */
+    /* Galería */
     .galeria {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -110,124 +119,633 @@
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(155, 89, 182, 0.7);
     }
+
+    /* Tarjetas de proyectos */
+    .proyecto {
+      padding: 15px;
+      margin: 15px 0;
+      background: #0d1117;
+      border-left: 4px solid #9b59b6;
+      border-radius: 6px;
+    }
+
+    .proyecto h3 {
+      margin-top: 0;
+      color: #9b59b6;
+    }
+
+    .tecnologias {
+      color: #00e676;
+      font-size: 0.95em;
+      font-weight: bold;
+    }
+
+    .equipo {
+      color: #e6edf3;
+      font-size: 0.9em;
+      font-style: italic;
+    }
+
+    @media (max-width: 700px) {
+
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .header-text h1 {
+        font-size: 1.8em;
+      }
+
+      section {
+        margin: 20px 10px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
+
+<!-- =========================
+     CABECERA
+========================= -->
+
 <header>
+
   <div class="header-container">
-    <img src="IMG/mifoto.jpg" alt="Foto de Fátima Esmeralda">
+
+    <img
+      src="IMG/mifoto.jpg"
+      alt="Foto de Fátima Esmeralda Valle Argueta"
+    >
+
     <div class="header-text">
+
       <h1>👩‍💻 Fátima Esmeralda Valle Argueta</h1>
-      <p>Estudiante de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM) – Colegio Concertado San José</p>
+
+      <p>
+        <strong>
+          Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+        </strong>
+      </p>
+
+      <p>
+        Desarrollo de software · Análisis de datos · Automatización
+      </p>
+
     </div>
+
   </div>
+
 </header>
 
+
+<!-- =========================
+     SOBRE MÍ
+========================= -->
+
 <section>
+
   <h2>Sobre mí</h2>
+
   <p>
-    Soy una estudiante apasionada por la tecnología 👩‍💻, enfocada en el desarrollo de aplicaciones multiplataforma y la innovación digital. Me caracteriza la proactividad, responsabilidad y un fuerte interés por aprender y mejorar cada día.
+    Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM),
+    con experiencia práctica en análisis de datos y automatización de procesos.
   </p>
+
   <p>
-    Durante mi formación en DAM he desarrollado una base sólida en programación, desarrollo web y bases de datos: HTML, CSS, XML, XSD, XSLT 🌐, SQL, PL/SQL y MySQL 🗄️, así como la conexión de aplicaciones con bases de datos tanto en Java como en C# y Python.
+    Durante mis prácticas profesionales en SIIG desarrollé aplicaciones locales
+    con Python y Pandas para automatizar tareas repetitivas, procesar archivos
+    de datos y generar informes, facilitando el trabajo del equipo.
   </p>
+
   <p>
-    En programación he profundizado en Java (POO, colecciones, ficheros, JavaFX, Swing 🎨), Python 🐍 y C# .NET, desarrollando software estructurado y conectado a sistemas externos.
+    Cuento con conocimientos en desarrollo de aplicaciones de escritorio,
+    móviles y web, programación, bases de datos, APIs y tecnologías
+    multiplataforma.
   </p>
+
   <p>
-    También he ampliado mi perfil con tecnologías modernas como Angular, Spring Boot, Node.js, Flutter, Ionic y el desarrollo de servidores TCP, UDP y clientes FTP 🚀.
+    Me caracterizo por mi capacidad analítica, aprendizaje autónomo,
+    resolución de problemas y adaptación a nuevas tecnologías.
+    Busco una oportunidad para aportar mis conocimientos y seguir creciendo
+    profesionalmente.
   </p>
-  <p>
-    Me encanta trabajar en equipo 🤝, participar en proyectos reales y afrontar nuevos retos con creatividad y dedicación.
-  </p>
+
 </section>
 
+
+<!-- =========================
+     EXPERIENCIA PROFESIONAL
+========================= -->
+
 <section>
+
+  <h2>Experiencia Profesional</h2>
+
+  <div class="proyecto">
+
+    <h3>📊 Analista de Datos Junior | SIIG, Málaga</h3>
+
+    <p>
+      <strong>Prácticas profesionales · 4 meses</strong>
+    </p>
+
+    <ul>
+
+      <li>
+        📊 Análisis y procesamiento de datos para apoyar la toma de decisiones.
+      </li>
+
+      <li>
+        🐍 Desarrollo de aplicaciones locales con Python y Pandas
+        para automatizar tareas repetitivas.
+      </li>
+
+      <li>
+        ⚙️ Automatización de procesos de carga, transformación
+        y procesamiento de archivos.
+      </li>
+
+      <li>
+        📄 Generación automática de informes a partir de los datos procesados.
+      </li>
+
+      <li>
+        🚀 Desarrollo de soluciones para agilizar procesos y mejorar
+        la eficiencia del equipo.
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     TECNOLOGÍAS
+========================= -->
+
+<section>
+
   <h2>Lenguajes y Herramientas</h2>
+
   <ul>
-    <li>☕ Java (POO, colecciones, ficheros, Swing, JavaFX)</li>
-    <li>🔵 C# .NET (conexión MySQL, MVC, apps empresariales)</li>
-    <li>🐍 Python</li>
-    <li>🅰️ Angular (SPA, componentes, servicios, CRUD)</li>
-    <li>🌱 Spring Boot (APIs REST básicas)</li>
-    <li>📱 Flutter & Ionic (apps móviles multiplataforma)</li>
-    <li>🟩 Node.js (servidores y APIs sencillas)</li>
-    <li>🖥️ HTML & CSS</li>
-    <li>🌐 XML, XSD, XSLT</li>
-    <li>🗄️ SQL, MySQL, PL/SQL, DDL, DML</li>
-    <li>🔗 Servidores TCP, UDP y cliente-servidor FTP</li>
+
+    <li>☕ Java · POO · Swing · JavaFX</li>
+
+    <li>🐍 Python · Pandas</li>
+
+    <li>🔵 C# · .NET</li>
+
+    <li>🟨 JavaScript · TypeScript · HTML · CSS</li>
+
+    <li>⚛️ React · Angular</li>
+
+    <li>🌱 Spring · Spring Boot</li>
+
+    <li>🟩 Node.js · Django · FastAPI</li>
+
+    <li>📱 Android Studio · Java · Kotlin</li>
+
+    <li>📱 Ionic · Flutter</li>
+
+    <li>🗄️ MySQL · SQLite · Oracle · SQL · PL/SQL</li>
+
+    <li>🔥 Firebase · Firestore · Firebase Authentication</li>
+
+    <li>☁️ AWS · Microsoft Azure</li>
+
+    <li>🐳 Docker · Docker Compose</li>
+
+    <li>📊 Pandas · Recharts</li>
+
+    <li>🔧 Git · GitHub · VS Code</li>
+
+    <li>🏢 SAP</li>
+
     <li>📝 WordPress</li>
-    <li>💻 VS Code, Eclipse, IntelliJ, Android Studio</li>
+
+    <li>🔗 APIs REST · HTTP · JSON · TCP · UDP · FTP</li>
+
   </ul>
+
 </section>
 
+
+<!-- =========================
+     HABILIDADES
+========================= -->
+
 <section>
+
   <h2>Habilidades y Competencias</h2>
+
   <ul>
-    <li>💡 Pensamiento lógico y resolución de problemas</li>
-    <li>🤝 Trabajo en equipo y colaboración</li>
-    <li>🎨 Diseño de interfaces intuitivas</li>
-    <li>🛠️ Programación en Java, C#, Python y web</li>
-    <li>🔗 Conexión de aplicaciones a bases de datos y APIs</li>
-    <li>📊 Consultas SQL y diseño de BD</li>
-    <li>⚙️ Manejo de arquitecturas cliente-servidor</li>
-    <li>🚀 Aprendizaje rápido y adaptación</li>
+
+    <li>
+      💡 Pensamiento lógico y resolución de problemas
+    </li>
+
+    <li>
+      📊 Análisis y tratamiento de datos
+    </li>
+
+    <li>
+      ⚙️ Automatización y optimización de procesos
+    </li>
+
+    <li>
+      🤝 Trabajo en equipo y comunicación efectiva
+    </li>
+
+    <li>
+      🚀 Aprendizaje autónomo y adaptación
+    </li>
+
+    <li>
+      🗄️ Gestión y análisis de bases de datos
+    </li>
+
+    <li>
+      🔗 Desarrollo e integración de APIs REST
+    </li>
+
   </ul>
+
 </section>
 
-<section>
-  <h2>Proyectos</h2>
-  <ul>
-    <li>🏭 <strong>Gestor de Fábrica Honda</strong> (C# .NET + MySQL)</li>
-    <li>🌸 <strong>Gestión de Almacén Floristería</strong> (Angular)</li>
-    <li>🏥 Gestión de Personal del Hospital Carlos Haya (Java + MySQL)</li>
-    <li>📋 APP Python Gestor de Tareas</li>
-    <li>🌐 Página Web en HTML</li>
-    <li>📝 Proyecto WordPress</li>
-    <li>✈️ Juego de Avión (Python, lógica + puntaje)</li>
-    <li><a href="https://github.com/esmeralda2006" target="_blank">🚀 Ver todos mis proyectos en GitHub</a></li>
-  </ul>
-</section>
+
+<!-- =========================
+     PROYECTOS DESTACADOS
+========================= -->
 
 <section>
+
+  <h2>Proyectos Destacados</h2>
+
+
+  <!-- Gestión de gastos -->
+
+  <div class="proyecto">
+
+    <h3>💰 App de Gestión de Gastos</h3>
+
+    <p class="tecnologias">
+      Python · FastAPI · React · Ionic · TypeScript · MySQL · Azure
+    </p>
+
+    <p>
+      Aplicación multiplataforma para gestionar gastos, categorías,
+      presupuestos y estadísticas mediante una API REST.
+    </p>
+
+  </div>
+
+
+  <!-- TK3 -->
+
+  <div class="proyecto">
+
+    <h3>🏆 TK3 – KO Tournament Manager</h3>
+
+    <p class="tecnologias">
+      Angular · Python · FastAPI · SQLAlchemy · MariaDB
+    </p>
+
+    <p>
+      Plataforma web para gestionar torneos de eliminación directa,
+      jugadores, brackets, combates y estadísticas.
+    </p>
+
+  </div>
+
+
+  <!-- AmasonAPP -->
+
+  <div class="proyecto">
+
+    <h3>📱 AmasonAPP – Sistema de Tutoriales Multilingüe</h3>
+
+    <p class="tecnologias">
+      Java · Android Studio · Firebase Firestore · Firebase Authentication
+    </p>
+
+    <p>
+      Aplicación Android de tutoriales multilingües con autenticación
+      mediante Google y contenido dinámico almacenado en Firebase.
+    </p>
+
+    <p class="equipo">
+      👥 Proyecto desarrollado en equipo de 5 personas.
+    </p>
+
+  </div>
+
+
+  <!-- Hospital -->
+
+  <div class="proyecto">
+
+    <h3>🏥 Aplicación de Gestión Hospitalaria</h3>
+
+    <p class="tecnologias">
+      Java · Swing · MySQL
+    </p>
+
+    <p>
+      Aplicación de escritorio para la gestión de pacientes,
+      empleados, salas y camas.
+    </p>
+
+  </div>
+
+
+  <!-- Diario de viajes -->
+
+  <div class="proyecto">
+
+    <h3>✈️ Diario de Viajes</h3>
+
+    <p class="tecnologias">
+      Android Studio · Java · Kotlin
+    </p>
+
+    <p>
+      Aplicación móvil Android orientada al registro y gestión
+      de experiencias y viajes.
+    </p>
+
+  </div>
+
+
+  <!-- Floristería -->
+
+  <div class="proyecto">
+
+    <h3>🌸 Gestión de Almacén – Floristería</h3>
+
+    <p class="tecnologias">
+      Angular
+    </p>
+
+    <p>
+      Aplicación web para la gestión de productos y almacén.
+    </p>
+
+  </div>
+
+
+  <!-- Fábrica -->
+
+  <div class="proyecto">
+
+    <h3>🏭 Gestor de Fábrica de Coches</h3>
+
+    <p class="tecnologias">
+      C# · .NET · MySQL
+    </p>
+
+    <p>
+      Aplicación para la gestión de información de una fábrica
+      de vehículos.
+    </p>
+
+  </div>
+
+
+  <!-- Reparto -->
+
+  <div class="proyecto">
+
+    <h3>📦 Aplicación de Reparto de Paquetería</h3>
+
+    <p class="tecnologias">
+      Java
+    </p>
+
+    <p>
+      Aplicación orientada a la gestión y organización del
+      reparto de paquetes.
+    </p>
+
+  </div>
+
+
+  <!-- Radio -->
+
+  <div class="proyecto">
+
+    <h3>📻 AppRadio</h3>
+
+    <p class="tecnologias">
+      Java
+    </p>
+
+    <p>
+      Aplicación de radio desarrollada durante la formación.
+    </p>
+
+  </div>
+
+
+  <!-- Juego -->
+
+  <div class="proyecto">
+
+    <h3>🎮 Juego de Avión</h3>
+
+    <p class="tecnologias">
+      Python
+    </p>
+
+    <p>
+      Juego desarrollado en Python con lógica de juego
+      y sistema de puntuación.
+    </p>
+
+  </div>
+
+
+  <!-- Web -->
+
+  <div class="proyecto">
+
+    <h3>🌐 Proyectos Web</h3>
+
+    <p class="tecnologias">
+      HTML · CSS · JavaScript · WordPress
+    </p>
+
+    <p>
+      Desarrollo de diferentes proyectos web y sitios
+      realizados durante la formación.
+    </p>
+
+  </div>
+
+
+  <!-- GitHub -->
+
+  <p>
+
+    <a
+      href="https://github.com/esmeralda2006"
+      target="_blank"
+    >
+      🚀 Ver todos mis proyectos en GitHub
+    </a>
+
+  </p>
+
+</section>
+
+
+<!-- =========================
+     GALERÍA
+========================= -->
+
+<section>
+
   <h2>Galería de Proyectos</h2>
+
   <div class="galeria">
-    <img src="IMG/imagenes/hospital.png" alt="Gestión Hospital">
-    <img src="IMG/imagenes/trello.png" alt="Gestor de Tareas Python">
-    <img src="IMG/imagenes/juego.png" alt="Juego Python">
-    <img src="IMG/imagenes/wordpres.png" alt="WordPress">
-    <img src="IMG/imagenes/html.png" alt="Página HTML">
+
+    <img
+      src="IMG/imagenes/hospital.png"
+      alt="Aplicación de gestión hospitalaria"
+    >
+
+    <img
+      src="IMG/imagenes/trello.png"
+      alt="Gestor de tareas Python"
+    >
+
+    <img
+      src="IMG/imagenes/juego.png"
+      alt="Juego desarrollado con Python"
+    >
+
+    <img
+      src="IMG/imagenes/wordpres.png"
+      alt="Proyecto WordPress"
+    >
+
+    <img
+      src="IMG/imagenes/html.png"
+      alt="Página web HTML"
+    >
+
   </div>
+
 </section>
 
+
+<!-- =========================
+     CERTIFICACIONES
+========================= -->
+
 <section>
+
   <h2>Certificaciones</h2>
+
   <div class="galeria">
-    <img src="IMG/certificados/2.png" alt="Certificación">
-    <img src="IMG/certificados/3.png" alt="Certificación">
-    <img src="IMG/certificados/4.png" alt="Certificación">
-    <img src="IMG/certificados/5.png" alt="Certificación">
-    <img src="IMG/certificados/6.png" alt="Certificación">
+
+    <img
+      src="IMG/certificados/2.png"
+      alt="Certificación"
+    >
+
+    <img
+      src="IMG/certificados/3.png"
+      alt="Certificación"
+    >
+
+    <img
+      src="IMG/certificados/4.png"
+      alt="Certificación"
+    >
+
+    <img
+      src="IMG/certificados/5.png"
+      alt="Certificación"
+    >
+
+    <img
+      src="IMG/certificados/6.png"
+      alt="Certificación"
+    >
+
   </div>
+
 </section>
 
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
 <section>
+
   <h2>Contacto</h2>
+
   <ul>
-    <li>📧 Email personal: <a href="mailto:esmeraldaargueta2006@gmail.com">esmeraldaargueta2006@gmail.com</a></li>
-    <li>🏫 Email institucional: <a href="mailto:fatimaesmeraldavallea.sanjosemlg@fundacionloyola.net">fatimaesmeraldavallea.sanjosemlg@fundacionloyola.net</a></li>
-    <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/f%C3%A1tima-esmeralda-valle-argueta-a3407133b/" target="_blank">Fátima Esmeralda Valle Argueta</a></li>
-    <li>🐙 GitHub: <a href="https://github.com/esmeralda2006" target="_blank">esmeralda2006</a></li>
-    <li>📞 Teléfono: 613737979</li>
+
+    <li>
+      📧 Email:
+      <a href="mailto:esmeraldaargueta2006@gmail.com">
+        esmeraldaargueta2006@gmail.com
+      </a>
+    </li>
+
+    <li>
+      🔗 LinkedIn:
+      <a
+        href="https://www.linkedin.com/in/f%C3%A1tima-esmeralda-valle-argueta-a3407133b/"
+        target="_blank"
+      >
+        Fátima Esmeralda Valle Argueta
+      </a>
+    </li>
+
+    <li>
+      🐙 GitHub:
+      <a
+        href="https://github.com/esmeralda2006"
+        target="_blank"
+      >
+        esmeralda2006
+      </a>
+    </li>
+
+    <li>
+      📞 Teléfono: 613737979
+    </li>
+
   </ul>
+
 </section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
-  <p>© 2025 - Portafolio de Fátima Esmeralda Valle Argueta</p>
+
+  <p>
+    © 2026 - Portafolio de Fátima Esmeralda Valle Argueta
+  </p>
+
 </footer>
+
 
 </body>
 </html>
-
-
