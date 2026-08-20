@@ -1,746 +1,1865 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Portafolio de Fátima Esmeralda Valle Argueta</title>
+    <title>Fátima Esmeralda Valle Argueta | Portfolio</title>
 
-  <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Portfolio de Fátima Esmeralda Valle Argueta, Técnico Superior en Desarrollo de Aplicaciones Multiplataforma. Desarrollo de software, análisis de datos, automatización, IA, APIs y bases de datos.">
 
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #0d1117;
-      color: #e6edf3;
-    }
+    <style>
 
-    header {
-      background: linear-gradient(135deg, #9b59b6, #6a1b9a);
-      color: white;
-      padding: 40px 20px;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .header-container {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      max-width: 900px;
-      margin: 0 auto;
-      gap: 30px;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    header img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 3px solid #00e676;
-      object-fit: cover;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
 
-    .header-text h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    .header-text p {
-      font-size: 1.1em;
-      margin-top: 10px;
-    }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #161b22;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);
-    }
+        /* =========================
+           HEADER
+        ========================== */
 
-    h2 {
-      color: #9b59b6;
-      border-left: 5px solid #00e676;
-      padding-left: 10px;
-    }
+        header {
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+            padding: 75px 0;
+        }
 
-    h3 {
-      color: #e6edf3;
-      margin-bottom: 5px;
-    }
+        .header-content {
+            text-align: center;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+        .header-content h1 {
+            font-size: 44px;
+            margin-bottom: 10px;
+        }
 
-    ul li {
-      margin: 10px 0;
-      line-height: 1.5;
-    }
+        .header-content h2 {
+            font-size: 23px;
+            font-weight: normal;
+            color: #dbeafe;
+            margin-bottom: 18px;
+        }
 
-    a {
-      text-decoration: none;
-      color: #9b59b6;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+        .header-content p {
+            font-size: 17px;
+            color: #e5e7eb;
+        }
 
-    a:hover {
-      color: #00e676;
-    }
+        .header-buttons {
+            margin-top: 30px;
+        }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #6a1b9a;
-      color: white;
-      margin-top: 40px;
-    }
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 5px;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    /* Galería */
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
 
-    .galeria img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-    }
+        /* =========================
+           NAVBAR
+        ========================== */
 
-    .galeria img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(155, 89, 182, 0.7);
-    }
+        nav {
+            background: #111827;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    /* Tarjetas de proyectos */
-    .proyecto {
-      padding: 15px;
-      margin: 15px 0;
-      background: #0d1117;
-      border-left: 4px solid #9b59b6;
-      border-radius: 6px;
-    }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
 
-    .proyecto h3 {
-      margin-top: 0;
-      color: #9b59b6;
-    }
+        nav a {
+            display: block;
+            padding: 15px 17px;
+            color: white;
+            transition: 0.3s;
+        }
 
-    .tecnologias {
-      color: #00e676;
-      font-size: 0.95em;
-      font-weight: bold;
-    }
+        nav a:hover {
+            background: #2563eb;
+        }
 
-    .equipo {
-      color: #e6edf3;
-      font-size: 0.9em;
-      font-style: italic;
-    }
+        /* =========================
+           SECTIONS
+        ========================== */
 
-    @media (max-width: 700px) {
+        section {
+            padding: 70px 0;
+        }
 
-      .header-container {
-        flex-direction: column;
-        text-align: center;
-      }
+        section:nth-child(even) {
+            background: white;
+        }
 
-      header img {
-        width: 150px;
-        height: 150px;
-      }
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 45px;
+            color: #111827;
+        }
 
-      .header-text h1 {
-        font-size: 1.8em;
-      }
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background: #2563eb;
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 3px;
+        }
 
-      section {
-        margin: 20px 10px;
-      }
-    }
-  </style>
+        /* =========================
+           SOBRE MI
+        ========================== */
+
+        .about {
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .about p {
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           EXPERIENCIA
+        ========================== */
+
+        .experience-card {
+            background: white;
+            padding: 32px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .experience-card h3 {
+            color: #1e3a8a;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .experience-date {
+            color: #6b7280;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .experience-card ul {
+            padding-left: 23px;
+            margin-top: 15px;
+        }
+
+        .experience-card li {
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           CONOCIMIENTOS
+        ========================== */
+
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+        }
+
+        .knowledge-card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            border-left: 5px solid #2563eb;
+        }
+
+        .knowledge-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .knowledge-card p {
+            color: #4b5563;
+        }
+
+        /* =========================
+           SKILLS
+        ========================== */
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e0ecff;
+            color: #1e3a8a;
+            padding: 9px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================== */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-content {
+            padding: 27px;
+        }
+
+        .project-content h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .project-tech {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2563eb;
+            margin: 12px 0;
+        }
+
+        .project-content ul {
+            padding-left: 20px;
+            margin-top: 12px;
+        }
+
+        .project-content li {
+            margin-bottom: 8px;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* =========================
+           GALLERY
+        ========================== */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* =========================
+           CERTIFICACIONES
+        ========================== */
+
+        .certifications {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .certifications img {
+            width: 180px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        /* =========================
+           CONTACTO
+        ========================== */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 17px;
+        }
+
+        .contact a {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 768px) {
+
+            .header-content h1 {
+                font-size: 30px;
+            }
+
+            .header-content h2 {
+                font-size: 19px;
+            }
+
+            nav a {
+                padding: 11px 9px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+        }
+
+    </style>
 </head>
+
 
 <body>
 
 
-<!-- =========================
-     CABECERA
-========================= -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-<header>
+    <header>
 
-  <div class="header-container">
+        <div class="container header-content">
 
-    <img
-      src="IMG/mifoto.jpg"
-      alt="Foto de Fátima Esmeralda Valle Argueta"
-    >
+            <h1>Fátima Esmeralda Valle Argueta</h1>
 
-    <div class="header-text">
+            <h2>
+                Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+            </h2>
 
-      <h1>👩‍💻 Fátima Esmeralda Valle Argueta</h1>
+            <p>
+                Desarrollo de software · Análisis de datos · Automatización · IA · APIs
+            </p>
 
-      <p>
-        <strong>
-          Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
-        </strong>
-      </p>
+            <div class="header-buttons">
 
-      <p>
-        Desarrollo de software · Análisis de datos · Automatización
-      </p>
+                <a
+                    class="btn"
+                    href="https://github.com/esmeralda2006"
+                    target="_blank">
+                    🐙 GitHub
+                </a>
 
-    </div>
+                <a
+                    class="btn"
+                    href="mailto:esmeraldaargueta2006@gmail.com">
+                    📧 Contactar
+                </a>
 
-  </div>
+            </div>
 
-</header>
+        </div>
 
+    </header>
 
-<!-- =========================
-     SOBRE MÍ
-========================= -->
 
-<section>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-  <h2>Sobre mí</h2>
+    <nav>
 
-  <p>
-    Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM),
-    con experiencia práctica en análisis de datos y automatización de procesos.
-  </p>
+        <div class="container">
 
-  <p>
-    Durante mis prácticas profesionales en SIIG desarrollé aplicaciones locales
-    con Python y Pandas para automatizar tareas repetitivas, procesar archivos
-    de datos y generar informes, facilitando el trabajo del equipo.
-  </p>
+            <ul>
 
-  <p>
-    Cuento con conocimientos en desarrollo de aplicaciones de escritorio,
-    móviles y web, programación, bases de datos, APIs y tecnologías
-    multiplataforma.
-  </p>
+                <li>
+                    <a href="#sobre-mi">Sobre mí</a>
+                </li>
 
-  <p>
-    Me caracterizo por mi capacidad analítica, aprendizaje autónomo,
-    resolución de problemas y adaptación a nuevas tecnologías.
-    Busco una oportunidad para aportar mis conocimientos y seguir creciendo
-    profesionalmente.
-  </p>
+                <li>
+                    <a href="#experiencia">Experiencia</a>
+                </li>
 
-</section>
+                <li>
+                    <a href="#conocimientos">Conocimientos</a>
+                </li>
 
+                <li>
+                    <a href="#habilidades">Tecnologías</a>
+                </li>
 
-<!-- =========================
-     EXPERIENCIA PROFESIONAL
-========================= -->
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
 
-<section>
+                <li>
+                    <a href="#galeria">Galería</a>
+                </li>
 
-  <h2>Experiencia Profesional</h2>
+                <li>
+                    <a href="#certificaciones">Certificaciones</a>
+                </li>
 
-  <div class="proyecto">
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
 
-    <h3>📊 Analista de Datos Junior | SIIG, Málaga</h3>
+            </ul>
 
-    <p>
-      <strong>Prácticas profesionales · 4 meses</strong>
-    </p>
+        </div>
 
-    <ul>
+    </nav>
 
-      <li>
-        📊 Análisis y procesamiento de datos para apoyar la toma de decisiones.
-      </li>
 
-      <li>
-        🐍 Desarrollo de aplicaciones locales con Python y Pandas
-        para automatizar tareas repetitivas.
-      </li>
+    <!-- =========================
+         SOBRE MI
+    ========================== -->
 
-      <li>
-        ⚙️ Automatización de procesos de carga, transformación
-        y procesamiento de archivos.
-      </li>
+    <section id="sobre-mi">
 
-      <li>
-        📄 Generación automática de informes a partir de los datos procesados.
-      </li>
+        <div class="container">
 
-      <li>
-        🚀 Desarrollo de soluciones para agilizar procesos y mejorar
-        la eficiencia del equipo.
-      </li>
+            <h2 class="section-title">
+                Sobre mí
+            </h2>
 
-    </ul>
+            <div class="about">
+
+                <p>
+                    Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
+                    (DAM), con experiencia práctica en análisis de datos,
+                    automatización de procesos y desarrollo de aplicaciones.
+                </p>
+
+                <p>
+                    Durante mis prácticas profesionales en SIIG trabajé en el
+                    procesamiento, limpieza y validación de archivos Excel utilizando
+                    Python y Pandas. Desarrollé aplicaciones locales capaces de
+                    automatizar tareas repetitivas, detectar registros duplicados,
+                    localizar inconsistencias y generar informes de forma automática.
+                </p>
+
+                <p>
+                    También he desarrollado proyectos académicos y personales
+                    relacionados con aplicaciones web, móviles y de escritorio,
+                    APIs REST, bases de datos, programación orientada a objetos,
+                    programación segura, redes y sistemas cliente-servidor.
+                </p>
+
+                <p>
+                    He trabajado además con herramientas de automatización e
+                    inteligencia artificial, utilizando n8n para crear flujos que
+                    integran Gemini, JavaScript y Discord.
+                </p>
+
+                <p>
+                    Me caracteriza mi capacidad analítica, resolución de problemas,
+                    aprendizaje autónomo y gran entusiasmo por aprender nuevas
+                    tecnologías y aplicarlas en proyectos reales.
+                </p>
 
-  </div>
+            </div>
 
-</section>
+        </div>
 
+    </section>
 
-<!-- =========================
-     TECNOLOGÍAS
-========================= -->
 
-<section>
+    <!-- =========================
+         EXPERIENCIA
+    ========================== -->
 
-  <h2>Lenguajes y Herramientas</h2>
+    <section id="experiencia">
 
-  <ul>
+        <div class="container">
 
-    <li>☕ Java · POO · Swing · JavaFX</li>
+            <h2 class="section-title">
+                Experiencia Profesional
+            </h2>
 
-    <li>🐍 Python · Pandas</li>
+            <div class="experience-card">
 
-    <li>🔵 C# · .NET</li>
+                <h3>
+                    📊 Analista de Datos Junior | SIIG, Málaga
+                </h3>
 
-    <li>🟨 JavaScript · TypeScript · HTML · CSS</li>
+                <div class="experience-date">
+                    Prácticas profesionales · 4 meses
+                </div>
 
-    <li>⚛️ React · Angular</li>
+                <p>
+                    Durante mis prácticas participé en el desarrollo de herramientas
+                    locales destinadas a automatizar procesos de tratamiento,
+                    comprobación y generación de informes a partir de diferentes
+                    fuentes de información.
+                </p>
 
-    <li>🌱 Spring · Spring Boot</li>
+                <ul>
 
-    <li>🟩 Node.js · Django · FastAPI</li>
+                    <li>
+                        Desarrollo de aplicaciones locales con
+                        <strong>Python y Pandas</strong>.
+                    </li>
 
-    <li>📱 Android Studio · Java · Kotlin</li>
+                    <li>
+                        Limpieza, transformación y procesamiento de archivos Excel.
+                    </li>
 
-    <li>📱 Ionic · Flutter</li>
+                    <li>
+                        Detección de registros duplicados, datos inconsistentes,
+                        valores incorrectos y campos sin información.
+                    </li>
 
-    <li>🗄️ MySQL · SQLite · Oracle · SQL · PL/SQL</li>
+                    <li>
+                        Comparación de plantillas con datos reales para realizar
+                        comprobaciones automáticas.
+                    </li>
 
-    <li>🔥 Firebase · Firestore · Firebase Authentication</li>
+                    <li>
+                        Procesamiento de información procedente de diferentes áreas
+                        como académico, inventario, investigación, presupuesto y
+                        recursos humanos.
+                    </li>
 
-    <li>☁️ AWS · Microsoft Azure</li>
+                    <li>
+                        Automatización de procesos que anteriormente requerían
+                        comprobaciones manuales.
+                    </li>
 
-    <li>🐳 Docker · Docker Compose</li>
+                    <li>
+                        Generación automática de informes con los resultados de las
+                        comprobaciones realizadas.
+                    </li>
 
-    <li>📊 Pandas · Recharts</li>
+                    <li>
+                        Desarrollo de herramientas para procesar archivos Excel y
+                        Word y generar informes finales.
+                    </li>
 
-    <li>🔧 Git · GitHub · VS Code</li>
+                    <li>
+                        Apoyo en el análisis y organización de información relacionada
+                        con universidades y administraciones.
+                    </li>
 
-    <li>🏢 SAP</li>
+                    <li>
+                        Colaboración con el equipo para mejorar procesos y reducir
+                        tareas repetitivas.
+                    </li>
 
-    <li>📝 WordPress</li>
+                </ul>
 
-    <li>🔗 APIs REST · HTTP · JSON · TCP · UDP · FTP</li>
+            </div>
 
-  </ul>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- =========================
-     HABILIDADES
-========================= -->
+    <!-- =========================
+         CONOCIMIENTOS ACADEMICOS
+    ========================== -->
 
-<section>
+    <section id="conocimientos">
 
-  <h2>Habilidades y Competencias</h2>
+        <div class="container">
 
-  <ul>
+            <h2 class="section-title">
+                Conocimientos Académicos
+            </h2>
 
-    <li>
-      💡 Pensamiento lógico y resolución de problemas
-    </li>
+            <div class="knowledge-grid">
 
-    <li>
-      📊 Análisis y tratamiento de datos
-    </li>
 
-    <li>
-      ⚙️ Automatización y optimización de procesos
-    </li>
+                <div class="knowledge-card">
 
-    <li>
-      🤝 Trabajo en equipo y comunicación efectiva
-    </li>
+                    <h3>🌱 Spring / Spring Boot</h3>
 
-    <li>
-      🚀 Aprendizaje autónomo y adaptación
-    </li>
+                    <p>
+                        Framework de Java utilizado para desarrollar aplicaciones
+                        empresariales y APIs mediante una arquitectura estructurada,
+                        inyección de dependencias, controladores, servicios y
+                        persistencia de datos.
+                    </p>
 
-    <li>
-      🗄️ Gestión y análisis de bases de datos
-    </li>
+                </div>
 
-    <li>
-      🔗 Desarrollo e integración de APIs REST
-    </li>
 
-  </ul>
+                <div class="knowledge-card">
 
-</section>
+                    <h3>⚙️ n8n</h3>
 
+                    <p>
+                        Plataforma de automatización de flujos de trabajo para
+                        conectar aplicaciones, APIs y servicios. He desarrollado
+                        flujos integrando Chat Trigger, Gemini, JavaScript, Switch
+                        y Discord.
+                    </p>
 
-<!-- =========================
-     PROYECTOS DESTACADOS
-========================= -->
+                </div>
 
-<section>
 
-  <h2>Proyectos Destacados</h2>
+                <div class="knowledge-card">
 
+                    <h3>📱 Flutter</h3>
 
-  <!-- Gestión de gastos -->
+                    <p>
+                        Framework multiplataforma utilizado para crear aplicaciones
+                        móviles mediante una única base de código.
+                    </p>
 
-  <div class="proyecto">
+                </div>
 
-    <h3>💰 App de Gestión de Gastos</h3>
 
-    <p class="tecnologias">
-      Python · FastAPI · React · Ionic · TypeScript · MySQL · Azure
-    </p>
+                <div class="knowledge-card">
 
-    <p>
-      Aplicación multiplataforma para gestionar gastos, categorías,
-      presupuestos y estadísticas mediante una API REST.
-    </p>
+                    <h3>📱 Ionic React</h3>
 
-  </div>
+                    <p>
+                        Tecnología basada en React e Ionic para desarrollar
+                        aplicaciones web y móviles multiplataforma utilizando
+                        componentes reutilizables.
+                    </p>
 
+                </div>
 
-  <!-- TK3 -->
 
-  <div class="proyecto">
+                <div class="knowledge-card">
 
-    <h3>🏆 TK3 – KO Tournament Manager</h3>
+                    <h3>🐍 Django</h3>
 
-    <p class="tecnologias">
-      Angular · Python · FastAPI · SQLAlchemy · MariaDB
-    </p>
+                    <p>
+                        Framework web de Python utilizado para desarrollar aplicaciones
+                        web estructuradas mediante modelos, vistas, rutas y gestión
+                        de datos.
+                    </p>
 
-    <p>
-      Plataforma web para gestionar torneos de eliminación directa,
-      jugadores, brackets, combates y estadísticas.
-    </p>
+                </div>
 
-  </div>
 
+                <div class="knowledge-card">
 
-  <!-- AmasonAPP -->
+                    <h3>🚀 FastAPI</h3>
 
-  <div class="proyecto">
+                    <p>
+                        Framework moderno de Python utilizado para crear APIs REST
+                        rápidas, eficientes y documentadas automáticamente.
+                    </p>
 
-    <h3>📱 AmasonAPP – Sistema de Tutoriales Multilingüe</h3>
+                </div>
 
-    <p class="tecnologias">
-      Java · Android Studio · Firebase Firestore · Firebase Authentication
-    </p>
 
-    <p>
-      Aplicación Android de tutoriales multilingües con autenticación
-      mediante Google y contenido dinámico almacenado en Firebase.
-    </p>
+                <div class="knowledge-card">
 
-    <p class="equipo">
-      👥 Proyecto desarrollado en equipo de 5 personas.
-    </p>
+                    <h3>🤖 Hugging Face</h3>
 
-  </div>
+                    <p>
+                        Ecosistema de herramientas y modelos de inteligencia artificial
+                        utilizado para experimentar con modelos de lenguaje,
+                        procesamiento de lenguaje natural y otras aplicaciones de IA.
+                    </p>
 
+                </div>
 
-  <!-- Hospital -->
 
-  <div class="proyecto">
+                <div class="knowledge-card">
 
-    <h3>🏥 Aplicación de Gestión Hospitalaria</h3>
+                    <h3>🐳 Docker</h3>
 
-    <p class="tecnologias">
-      Java · Swing · MySQL
-    </p>
+                    <p>
+                        Plataforma de contenedores utilizada para empaquetar
+                        aplicaciones junto con sus dependencias y facilitar su
+                        ejecución y despliegue.
+                    </p>
 
-    <p>
-      Aplicación de escritorio para la gestión de pacientes,
-      empleados, salas y camas.
-    </p>
+                </div>
 
-  </div>
 
+                <div class="knowledge-card">
 
-  <!-- Diario de viajes -->
+                    <h3>🔐 Programación Segura</h3>
 
-  <div class="proyecto">
+                    <p>
+                        Conocimientos académicos en técnicas de protección de
+                        información y criptografía, incluyendo MD5, DES y DSA,
+                        además de conceptos relacionados con cifrado, descifrado,
+                        firmas digitales, control de acceso e integridad de datos.
+                    </p>
 
-    <h3>✈️ Diario de Viajes</h3>
+                </div>
 
-    <p class="tecnologias">
-      Android Studio · Java · Kotlin
-    </p>
+            </div>
 
-    <p>
-      Aplicación móvil Android orientada al registro y gestión
-      de experiencias y viajes.
-    </p>
+        </div>
 
-  </div>
+    </section>
 
 
-  <!-- Floristería -->
+    <!-- =========================
+         TECNOLOGIAS
+    ========================== -->
 
-  <div class="proyecto">
+    <section id="habilidades">
 
-    <h3>🌸 Gestión de Almacén – Floristería</h3>
+        <div class="container">
 
-    <p class="tecnologias">
-      Angular
-    </p>
+            <h2 class="section-title">
+                Lenguajes, Tecnologías y Herramientas
+            </h2>
 
-    <p>
-      Aplicación web para la gestión de productos y almacén.
-    </p>
+            <div class="skills">
 
-  </div>
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">C#</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
 
+                <span class="skill">Spring</span>
+                <span class="skill">Spring Boot</span>
+                <span class="skill">Angular</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Django</span>
+                <span class="skill">FastAPI</span>
 
-  <!-- Fábrica -->
+                <span class="skill">Ionic React</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">Android Studio</span>
+                <span class="skill">JavaFX</span>
+                <span class="skill">Swing</span>
+                <span class="skill">.NET</span>
 
-  <div class="proyecto">
+                <span class="skill">MySQL</span>
+                <span class="skill">SQLite</span>
+                <span class="skill">Oracle</span>
+                <span class="skill">MariaDB</span>
+                <span class="skill">MongoDB</span>
 
-    <h3>🏭 Gestor de Fábrica de Coches</h3>
+                <span class="skill">SQL</span>
+                <span class="skill">PL/SQL</span>
+                <span class="skill">Pandas</span>
 
-    <p class="tecnologias">
-      C# · .NET · MySQL
-    </p>
+                <span class="skill">SQLAlchemy</span>
+                <span class="skill">Hibernate</span>
+                <span class="skill">HQL</span>
 
-    <p>
-      Aplicación para la gestión de información de una fábrica
-      de vehículos.
-    </p>
+                <span class="skill">Firebase</span>
+                <span class="skill">Firestore</span>
 
-  </div>
+                <span class="skill">AWS</span>
+                <span class="skill">Microsoft Azure</span>
 
+                <span class="skill">Docker</span>
+                <span class="skill">Docker Compose</span>
 
-  <!-- Reparto -->
+                <span class="skill">n8n</span>
+                <span class="skill">Gemini</span>
+                <span class="skill">Hugging Face</span>
 
-  <div class="proyecto">
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">VS Code</span>
 
-    <h3>📦 Aplicación de Reparto de Paquetería</h3>
+                <span class="skill">APIs REST</span>
+                <span class="skill">HTTP</span>
+                <span class="skill">JSON</span>
+                <span class="skill">SMTP</span>
 
-    <p class="tecnologias">
-      Java
-    </p>
+                <span class="skill">TCP</span>
+                <span class="skill">UDP</span>
+                <span class="skill">FTP</span>
 
-    <p>
-      Aplicación orientada a la gestión y organización del
-      reparto de paquetes.
-    </p>
+                <span class="skill">WordPress</span>
+                <span class="skill">SAP</span>
 
-  </div>
+                <span class="skill">MD5</span>
+                <span class="skill">DES</span>
+                <span class="skill">DSA</span>
 
+            </div>
 
-  <!-- Radio -->
+        </div>
 
-  <div class="proyecto">
+    </section>
 
-    <h3>📻 AppRadio</h3>
 
-    <p class="tecnologias">
-      Java
-    </p>
+    <!-- =========================
+         COMPETENCIAS
+    ========================== -->
 
-    <p>
-      Aplicación de radio desarrollada durante la formación.
-    </p>
+    <section>
 
-  </div>
+        <div class="container">
 
+            <h2 class="section-title">
+                Habilidades y Competencias
+            </h2>
 
-  <!-- Juego -->
+            <div class="skills">
 
-  <div class="proyecto">
+                <span class="skill">
+                    💡 Pensamiento lógico
+                </span>
 
-    <h3>🎮 Juego de Avión</h3>
+                <span class="skill">
+                    📊 Análisis y tratamiento de datos
+                </span>
 
-    <p class="tecnologias">
-      Python
-    </p>
+                <span class="skill">
+                    ⚙️ Automatización de procesos
+                </span>
 
-    <p>
-      Juego desarrollado en Python con lógica de juego
-      y sistema de puntuación.
-    </p>
+                <span class="skill">
+                    🤖 Integración de IA
+                </span>
 
-  </div>
+                <span class="skill">
+                    🔗 Integración de APIs
+                </span>
 
+                <span class="skill">
+                    🗄️ Bases de datos
+                </span>
 
-  <!-- Web -->
+                <span class="skill">
+                    🔐 Programación segura
+                </span>
 
-  <div class="proyecto">
+                <span class="skill">
+                    🌐 Comunicación cliente-servidor
+                </span>
 
-    <h3>🌐 Proyectos Web</h3>
+                <span class="skill">
+                    🧵 Programación multihilo
+                </span>
 
-    <p class="tecnologias">
-      HTML · CSS · JavaScript · WordPress
-    </p>
+                <span class="skill">
+                    🚀 Aprendizaje autónomo
+                </span>
 
-    <p>
-      Desarrollo de diferentes proyectos web y sitios
-      realizados durante la formación.
-    </p>
+                <span class="skill">
+                    🤝 Trabajo en equipo
+                </span>
 
-  </div>
+                <span class="skill">
+                    🧩 Resolución de problemas
+                </span>
 
+            </div>
 
-  <!-- GitHub -->
+        </div>
 
-  <p>
+    </section>
 
-    <a
-      href="https://github.com/esmeralda2006"
-      target="_blank"
-    >
-      🚀 Ver todos mis proyectos en GitHub
-    </a>
 
-  </p>
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
 
-</section>
+    <section id="proyectos">
 
+        <div class="container">
 
-<!-- =========================
-     GALERÍA
-========================= -->
+            <h2 class="section-title">
+                Proyectos Destacados
+            </h2>
 
-<section>
+            <div class="projects">
 
-  <h2>Galería de Proyectos</h2>
 
-  <div class="galeria">
+                <!-- EXMETRACK -->
 
-    <img
-      src="IMG/imagenes/hospital.png"
-      alt="Aplicación de gestión hospitalaria"
-    >
+                <article class="project-card">
 
-    <img
-      src="IMG/imagenes/trello.png"
-      alt="Gestor de tareas Python"
-    >
+                    <div class="project-content">
 
-    <img
-      src="IMG/imagenes/juego.png"
-      alt="Juego desarrollado con Python"
-    >
+                        <h3>
+                            💰 ExmeTrack – Sistema de Gestión de Gastos Personales
+                        </h3>
 
-    <img
-      src="IMG/imagenes/wordpres.png"
-      alt="Proyecto WordPress"
-    >
+                        <div class="project-tech">
+                            Python · FastAPI · React · Ionic React · TypeScript ·
+                            MySQL · Azure · SQLAlchemy
+                        </div>
 
-    <img
-      src="IMG/imagenes/html.png"
-      alt="Página web HTML"
-    >
+                        <p>
+                            Aplicación web y móvil diseñada para controlar y gestionar
+                            las finanzas personales de los usuarios.
+                        </p>
 
-  </div>
+                        <ul>
 
-</section>
+                            <li>
+                                Registro y gestión de gastos.
+                            </li>
 
+                            <li>
+                                Categorías personalizadas.
+                            </li>
 
-<!-- =========================
-     CERTIFICACIONES
-========================= -->
+                            <li>
+                                Presupuestos mensuales.
+                            </li>
 
-<section>
+                            <li>
+                                Dashboard con estadísticas y gráficos.
+                            </li>
 
-  <h2>Certificaciones</h2>
+                            <li>
+                                Autenticación mediante JWT.
+                            </li>
 
-  <div class="galeria">
+                            <li>
+                                Sistema multidioma español/inglés.
+                            </li>
 
-    <img
-      src="IMG/certificados/2.png"
-      alt="Certificación"
-    >
+                            <li>
+                                Modo oscuro y claro.
+                            </li>
 
-    <img
-      src="IMG/certificados/3.png"
-      alt="Certificación"
-    >
+                            <li>
+                                API REST desarrollada con FastAPI.
+                            </li>
 
-    <img
-      src="IMG/certificados/4.png"
-      alt="Certificación"
-    >
+                            <li>
+                                Persistencia mediante MySQL y SQLAlchemy.
+                            </li>
 
-    <img
-      src="IMG/certificados/5.png"
-      alt="Certificación"
-    >
+                        </ul>
 
-    <img
-      src="IMG/certificados/6.png"
-      alt="Certificación"
-    >
+                        <a
+                            class="project-link"
+                            href="https://github.com/esmeralda2006/App-Gestion-Gastos"
+                            target="_blank">
+                            🚀 Ver proyecto en GitHub →
+                        </a>
 
-  </div>
+                    </div>
 
-</section>
+                </article>
 
 
-<!-- =========================
-     CONTACTO
-========================= -->
+                <!-- N8N -->
 
-<section>
+                <article class="project-card">
 
-  <h2>Contacto</h2>
+                    <div class="project-content">
 
-  <ul>
+                        <h3>
+                            🤖 Automatización IA con n8n + Gemini + Discord
+                        </h3>
 
-    <li>
-      📧 Email:
-      <a href="mailto:esmeraldaargueta2006@gmail.com">
-        esmeraldaargueta2006@gmail.com
-      </a>
-    </li>
+                        <div class="project-tech">
+                            n8n · Gemini · JavaScript · Discord · APIs
+                        </div>
 
-    <li>
-      🔗 LinkedIn:
-     
-    </li>
+                        <p>
+                            Flujo de automatización desarrollado con n8n para
+                            recibir mensajes, procesarlos mediante inteligencia
+                            artificial y enviarlos automáticamente a diferentes
+                            canales de Discord.
+                        </p>
 
-    <li>
-      🐙 GitHub:
-      <a
-        href="https://github.com/esmeralda2006"
-        target="_blank"
-      >
-        esmeralda2006
-      </a>
-    </li>
+                        <ul>
 
-    <li>
-      📞 Teléfono: 613737979
-    </li>
+                            <li>
+                                Chat Trigger para introducir mensajes.
+                            </li>
 
-  </ul>
+                            <li>
+                                Integración con Google Gemini.
+                            </li>
 
-</section>
+                            <li>
+                                Procesamiento mediante JavaScript.
+                            </li>
 
+                            <li>
+                                Limpieza de respuestas generadas por IA.
+                            </li>
 
-<!-- =========================
-     FOOTER
-========================= -->
+                            <li>
+                                Eliminación de formatos Markdown y saltos de línea.
+                            </li>
 
-<footer>
+                            <li>
+                                Limitación del contenido para adaptarlo a Discord.
+                            </li>
 
-  <p>
-    © 2026 - Portafolio de Fátima Esmeralda Valle Argueta
-  </p>
+                            <li>
+                                Switch para detectar palabras clave.
+                            </li>
 
-</footer>
+                            <li>
+                                Enrutamiento automático a diferentes canales.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- HOSPITAL -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            🏥 Sistema de Gestión Hospitalaria
+                        </h3>
+
+                        <div class="project-tech">
+                            Java · Swing · MySQL · POO
+                        </div>
+
+                        <p>
+                            Sistema integral de gestión hospitalaria desarrollado
+                            para digitalizar la administración de pacientes,
+                            empleados e infraestructura hospitalaria.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Gestión de médicos, enfermeros y personal administrativo.
+                            </li>
+
+                            <li>
+                                Gestión de pacientes.
+                            </li>
+
+                            <li>
+                                Historial clínico.
+                            </li>
+
+                            <li>
+                                Gestión de salas y habitaciones.
+                            </li>
+
+                            <li>
+                                Asignación de camas a pacientes.
+                            </li>
+
+                            <li>
+                                Gestión de consultas y altas médicas.
+                            </li>
+
+                            <li>
+                                Gestión de mantenimiento y reparaciones.
+                            </li>
+
+                            <li>
+                                Consultas y estadísticas hospitalarias.
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            Proyecto colaborativo desarrollado por un equipo de
+                            4 personas, aplicando programación orientada a objetos,
+                            persistencia de datos, bases de datos relacionales e
+                            interfaces gráficas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TK3 -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            🏆 TK3 – KO Tournament Manager
+                        </h3>
+
+                        <div class="project-tech">
+                            Angular 19 · FastAPI · SQLAlchemy · MariaDB
+                        </div>
+
+                        <p>
+                            Plataforma web para la gestión de torneos de lucha
+                            mediante eliminación directa.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Gestión de jugadores.
+                            </li>
+
+                            <li>
+                                Gestión de jugadores activos e inactivos.
+                            </li>
+
+                            <li>
+                                Generación automática de brackets.
+                            </li>
+
+                            <li>
+                                Algoritmo de eliminación directa.
+                            </li>
+
+                            <li>
+                                Gestión automática de BYE.
+                            </li>
+
+                            <li>
+                                Gestión de rondas y combates.
+                            </li>
+
+                            <li>
+                                Historial de combates.
+                            </li>
+
+                            <li>
+                                Dashboard de estadísticas.
+                            </li>
+
+                            <li>
+                                Arquitectura cliente-servidor.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AMASON -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            📦 Amason – Sistema de Gestión de Paquetería
+                        </h3>
+
+                        <div class="project-tech">
+                            Java · JavaFX · Servidor · SMTP · Redes · Multihilo
+                        </div>
+
+                        <p>
+                            Aplicación cliente-servidor destinada a la gestión
+                            integral de una empresa de transporte y reparto de
+                            paquetería.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Gestión de rutas de reparto.
+                            </li>
+
+                            <li>
+                                Gestión de puntos de entrega.
+                            </li>
+
+                            <li>
+                                Gestión de pedidos y servicios.
+                            </li>
+
+                            <li>
+                                Administración de camiones.
+                            </li>
+
+                            <li>
+                                Gestión de bases de transporte.
+                            </li>
+
+                            <li>
+                                Administración general de la empresa.
+                            </li>
+
+                            <li>
+                                Comunicación mediante red.
+                            </li>
+
+                            <li>
+                                Arquitectura con servidor.
+                            </li>
+
+                            <li>
+                                Programación multihilo y uso de hilos y subhilos.
+                            </li>
+
+                            <li>
+                                Envío y recepción de correos mediante SMTP.
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            Proyecto colaborativo realizado por 4 estudiantes
+                            de segundo curso de DAM. Además, se coordinó con
+                            estudiantes de primer curso encargados de desarrollar
+                            una página web donde se documentaba y explicaba el
+                            funcionamiento de la aplicación.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- VUELOS -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            ✈️ Sistema de Gestión y Reservas de Vuelos
+                        </h3>
+
+                        <div class="project-tech">
+                            Java · Hibernate · HQL · MongoDB · Criptografía · DSA
+                        </div>
+
+                        <p>
+                            Aplicación destinada a la gestión integral de
+                            aeropuertos, aerolíneas, aviones, vuelos, pasajeros,
+                            empleados y reservas.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Gestión de aeropuertos y aerolíneas.
+                            </li>
+
+                            <li>
+                                Gestión de aviones y horarios.
+                            </li>
+
+                            <li>
+                                Gestión de pasajeros.
+                            </li>
+
+                            <li>
+                                Gestión de reservas.
+                            </li>
+
+                            <li>
+                                Gestión de empleados y credenciales.
+                            </li>
+
+                            <li>
+                                Gestión de información meteorológica.
+                            </li>
+
+                            <li>
+                                Persistencia relacional mediante Hibernate ORM.
+                            </li>
+
+                            <li>
+                                Gestión de sesiones y transacciones.
+                            </li>
+
+                            <li>
+                                Consultas mediante HQL.
+                            </li>
+
+                            <li>
+                                MongoDB para registros meteorológicos asociados
+                                a los aeropuertos.
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            El proyecto incorpora conocimientos de programación
+                            segura y criptografía, trabajando académicamente con
+                            técnicas como <strong>MD5, DES y DSA</strong>.
+                            Se aplicaron mecanismos de cifrado y descifrado,
+                            control de acceso y firmas digitales para proteger
+                            y verificar información sensible.
+                        </p>
+
+                        <p>
+                            Cada reserva puede ser firmada digitalmente para
+                            comprobar la integridad de la información y detectar
+                            modificaciones no autorizadas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- HONDA -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            🚗🏭 Gestor de Fábrica Honda
+                        </h3>
+
+                        <div class="project-tech">
+                            C# · .NET · MySQL/MariaDB · MVC
+                        </div>
+
+                        <p>
+                            Aplicación de consola desarrollada en C# y .NET para
+                            gestionar información de una fábrica de vehículos.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Gestión de coches.
+                            </li>
+
+                            <li>
+                                Gestión de modelos.
+                            </li>
+
+                            <li>
+                                Gestión de colores.
+                            </li>
+
+                            <li>
+                                Gestión de extras y paquetes.
+                            </li>
+
+                            <li>
+                                Identificadores lógicos.
+                            </li>
+
+                            <li>
+                                Validación de VIN.
+                            </li>
+
+                            <li>
+                                Relaciones entre entidades.
+                            </li>
+
+                            <li>
+                                Consultas mediante JOIN.
+                            </li>
+
+                            <li>
+                                Control de errores de base de datos.
+                            </li>
+
+                            <li>
+                                Integridad referencial.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RADIO -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            📻 Aplicación de Radio
+                        </h3>
+
+                        <div class="project-tech">
+                            C# · .NET
+                        </div>
+
+                        <p>
+                            Aplicación desarrollada con C# y .NET durante la
+                            formación para trabajar con funcionalidades de
+                            reproducción y gestión de emisoras de radio.
+                        </p>
+
+                        <p>
+                            Proyecto orientado a reforzar conocimientos de
+                            programación, interfaces y desarrollo de aplicaciones
+                            con tecnología .NET.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AMASONAPP -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            📱 AmasonAPP – Sistema de Tutoriales Multilingüe
+                        </h3>
+
+                        <div class="project-tech">
+                            Java · Android Studio · Firebase · Firestore
+                        </div>
+
+                        <p>
+                            Aplicación Android para consultar tutoriales
+                            multilingües con contenido dinámico almacenado
+                            en Firebase.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Inicio de sesión mediante Google.
+                            </li>
+
+                            <li>
+                                Firebase Authentication.
+                            </li>
+
+                            <li>
+                                Cloud Firestore.
+                            </li>
+
+                            <li>
+                                Navigation Drawer.
+                            </li>
+
+                            <li>
+                                RecyclerView y Material Design.
+                            </li>
+
+                            <li>
+                                Arquitectura con Activities, Fragments,
+                                Repositories y Models.
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            Proyecto desarrollado en equipo de 5 personas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FLORISTERIA -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            🌸 Gestión de Almacén – Floristería
+                        </h3>
+
+                        <div class="project-tech">
+                            Angular
+                        </div>
+
+                        <p>
+                            Aplicación web desarrollada con Angular para la
+                            gestión y organización de productos y almacén
+                            de una floristería.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Gestión de productos.
+                            </li>
+
+                            <li>
+                                Organización del inventario.
+                            </li>
+
+                            <li>
+                                Interfaz web basada en componentes Angular.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DIARIO DE VIAJES -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            ✈️ Diario de Viajes
+                        </h3>
+
+                        <div class="project-tech">
+                            Android Studio · Java · Kotlin
+                        </div>
+
+                        <p>
+                            Aplicación móvil Android orientada al registro,
+                            organización y gestión de experiencias de viaje.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- REPARTO -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            📦 Aplicación de Reparto de Paquetería
+                        </h3>
+
+                        <div class="project-tech">
+                            Java
+                        </div>
+
+                        <p>
+                            Aplicación orientada a la gestión y organización
+                            del reparto de paquetes y operaciones de distribución.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- JUEGO -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            🎮 Juego desarrollado con Python
+                        </h3>
+
+                        <div class="project-tech">
+                            Python
+                        </div>
+
+                        <p>
+                            Proyecto desarrollado para trabajar lógica de
+                            programación, interacción con el usuario,
+                            eventos y sistema de puntuación.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- WORDPRESS -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>
+                            🌐 Proyectos Web
+                        </h3>
+
+                        <div class="project-tech">
+                            HTML · CSS · JavaScript · WordPress
+                        </div>
+
+                        <p>
+                            Desarrollo de diferentes páginas y proyectos web
+                            realizados durante la formación, trabajando
+                            estructura, estilos, interacción y gestión de
+                            contenidos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALERIA
+    ========================== -->
+
+    <section id="galeria">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Galería de Proyectos
+            </h2>
+
+            <div class="gallery">
+
+                <a
+                    href="https://esmeralda2006.github.io/IMG/imagenes/hospital.png"
+                    target="_blank">
+
+                    <img
+                        src="https://esmeralda2006.github.io/IMG/imagenes/hospital.png"
+                        alt="Aplicación de gestión hospitalaria">
+
+                </a>
+
+
+                <a
+                    href="https://esmeralda2006.github.io/IMG/imagenes/trello.png"
+                    target="_blank">
+
+                    <img
+                        src="https://esmeralda2006.github.io/IMG/imagenes/trello.png"
+                        alt="Gestor de tareas desarrollado con Python">
+
+                </a>
+
+
+                <a
+                    href="https://esmeralda2006.github.io/IMG/imagenes/juego.png"
+                    target="_blank">
+
+                    <img
+                        src="https://esmeralda2006.github.io/IMG/imagenes/juego.png"
+                        alt="Juego desarrollado con Python">
+
+                </a>
+
+
+                <a
+                    href="https://esmeralda2006.github.io/IMG/imagenes/wordpres.png"
+                    target="_blank">
+
+                    <img
+                        src="https://esmeralda2006.github.io/IMG/imagenes/wordpres.png"
+                        alt="Proyecto WordPress">
+
+                </a>
+
+
+                <a
+                    href="https://esmeralda2006.github.io/IMG/imagenes/html.png"
+                    target="_blank">
+
+                    <img
+                        src="https://esmeralda2006.github.io/IMG/imagenes/html.png"
+                        alt="Proyecto web HTML">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CERTIFICACIONES
+    ========================== -->
+
+    <section id="certificaciones">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Certificaciones
+            </h2>
+
+            <div class="certifications">
+
+                <img
+                    src="https://esmeralda2006.github.io/IMG/certificados/2.png"
+                    alt="Certificación">
+
+                <img
+                    src="https://esmeralda2006.github.io/IMG/certificados/3.png"
+                    alt="Certificación">
+
+                <img
+                    src="https://esmeralda2006.github.io/IMG/certificados/4.png"
+                    alt="Certificación">
+
+                <img
+                    src="https://esmeralda2006.github.io/IMG/certificados/5.png"
+                    alt="Certificación">
+
+                <img
+                    src="https://esmeralda2006.github.io/IMG/certificados/6.png"
+                    alt="Certificación">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section id="contacto">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contacto
+            </h2>
+
+            <div class="contact">
+
+                <p>
+                    📧 Email:
+                    <a href="mailto:esmeraldaargueta2006@gmail.com">
+                        esmeraldaargueta2006@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    🐙 GitHub:
+                    <a
+                        href="https://github.com/esmeralda2006"
+                        target="_blank">
+                        github.com/esmeralda2006
+                    </a>
+                </p>
+
+                <p>
+                    🔗 LinkedIn:
+                    <a href="#">
+                        Añadir LinkedIn
+                    </a>
+                </p>
+
+                <p>
+                    📞 Teléfono:
+                    <strong>613737979</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 - Fátima Esmeralda Valle Argueta
+        </p>
+
+        <p>
+            Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
+        </p>
+
+    </footer>
 
 
 </body>
+
 </html>
